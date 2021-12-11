@@ -33,9 +33,9 @@ date: 2021-06-17 15:49:46
   ![](https://cdn.jsdelivr.net/gh/code-anan/image/20210617161501.png)
   如果看到上面的提示，就在cmd里面继续敲这两行：（如果没有的话可以直接忽略）
 
->git config --global user.name "xxx@xxx.com(你的github邮箱)"   
+>git config --global user.email "xxx@xxx.com(你的github邮箱)"   
 
->git config --global user.email "你的github用户名"（敲完之后，继续上面的commit这一步）
+>git config --global user.name "你的github用户名"（敲完之后，继续上面的commit这一步）
  
  + 第四步是`git remote add origin https://github.com/code-anan/hexo-codeResource.git`,注意替换成你的地址，第一步的时候应该复制下来了（这一步是提交到远程github上）
  + 最后一步是`git push -u origin master `(push到master分支)

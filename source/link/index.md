@@ -10,8 +10,8 @@ top_img: https://cdn.jsdelivr.net/gh/code-anan/image/about.jpg
 ``` bash
  - name: 呆坐于人海
    link: www.weilong98.com
-   avatar: https://cdn.jsdelivr.net/gh/code-anan/image/avator.png
+   avatar: https://cdn.jsdelivr.net/gh/code-anan/image/avator.jpg
    descr: 正在学习中的小白~
-   siteshot: https://cdn.jsdelivr.net/gh/code-anan/image/bg.jpg
+   siteshot: https://cdn.jsdelivr.net/gh/code-anan/image/mao.jpg
 
 ```
