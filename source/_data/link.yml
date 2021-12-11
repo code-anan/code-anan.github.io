@@ -1,0 +1,98 @@
+- class_name: 网站推荐
+  class_desc: 个人觉得还不错的网站（不定期更新）
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-tw/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简单且强大的网誌框架
+      siteshot: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+    - name: KuangStudy
+      link: https://www.kuangstudy.com/
+      avatar: https://thirdwx.qlogo.cn/mmopen/vi_32/p2kibtCm4Z9p8aDSL0oQRl67AZ7dPebnLV9ibZtsQP8CGQeLeKfuiaeLmdl4KDzNTYM5M3UJ46ZBmOJDPDwsAsn0w/132
+      descr: Java成神之路必备！
+      siteshot: https://thirdwx.qlogo.cn/mmopen/vi_32/p2kibtCm4Z9p8aDSL0oQRl67AZ7dPebnLV9ibZtsQP8CGQeLeKfuiaeLmdl4KDzNTYM5M3UJ46ZBmOJDPDwsAsn0w/132
+    - name: 小霸王，其乐无穷
+      link: https://www.yikm.net/
+      avatar: https://mrcuya.gitee.io/yikmresource/fcpic/sj/436a.png
+      descr: 愿我们找回童年的快乐 
+      siteshot: https://mrcuya.gitee.io/yikmresource/fcpic/sj/436a.png
+    - name: 合成大西瓜祖玛版
+      link: http://www.wesane.com/game/694/?dt_dapp=1&dt_dapp=1&dt_dapp=1&dt_dapp=1
+      avatar: https://images.9k9k.com/m/game/2021/05/1622340018_2.png
+      descr: 休闲小游戏很好玩[]~(￣▽￣)~*
+      siteshot: https://images.9k9k.com/m/game/2021/05/1622340018_2.png
+    - name: 压缩图片
+      link: https://docsmall.com/
+      avatar: https://cdn.docsmall.com/assets/img/33d17c9.png
+      descr: 好用的压缩图片网站
+      siteshot: https://cdn.docsmall.com/assets/img/33d17c9.png
+    - name: 截屏工具
+      link: https://app.prntscr.com/zh-cn/index.html
+      avatar: https://cdn.jsdelivr.net/gh/code-anan/image/lightshot-icon.webp
+      descr: 超好用的截屏工具，没有之一！
+      siteshot: https://cdn.jsdelivr.net/gh/code-anan/image/lightshot-icon.webp
+    - name: 图书馆
+      link: https://www.nowcoder.com/library
+      avatar: https://cdn.jsdelivr.net/gh/code-anan/image/u=3511027800,4244764456&fm=26&fmt=auto&gp=0.webp
+      descr: 有空的时间看一看
+      siteshot: https://cdn.jsdelivr.net/gh/code-anan/image/u=3511027800,4244764456&fm=26&fmt=auto&gp=0.webp
+    - name: 在线画图工具
+      link: https://processon.com
+      avatar: https://cdn.jsdelivr.net/gh/code-anan/image/20210813210412.webp
+      descr: 好用的画图工具
+      siteshot: https://cdn.jsdelivr.net/gh/code-anan/image/20210813210412.webp
+    - name: 解压小网站
+      link: https://aidn.jp/mikutap/
+      avatar: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---c-ssl.duitang.com-uploads-item-201511-12-20151112165645_jPuFy.jpeg&refer=http---c-ssl.duitang.jpg
+      descr: 无聊的时候可以玩一玩
+      siteshot: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---c-ssl.duitang.com-uploads-item-201511-12-20151112165645_jPuFy.jpeg&refer=http---c-ssl.duitang.jpg
+- class_name: 大佬推荐
+  class_desc: 
+  link_list:
+    - name: Jerry
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: 关于butterfly主题的基本设置 他的文章特别详细很适合新手 
+      siteshot:
+    - name: 小嘉的部落格
+      link: https://blog.imzjw.cn/posts/b74f504f/
+      avatar: https://cdn.jsdelivr.net/npm/nanshen/avatar.jpg
+      descr: butterfly主题优化的进阶版 很适用
+      siteshot:
+    - name: Akliar
+      link: https://akilar.top/posts/7c16c4bb/
+      avatar: https://cdn.jsdelivr.net/gh/code-anan/image/akliar.png
+      descr: butterfly主题魔改大佬 有兴趣的可以看看
+      siteshot:
+    - name: 花猪
+      link: https://cnhuazhu.gitee.io/
+      avatar: https://cdn.jsdelivr.net/gh/CNhuazhu/Image/avatar.jpg
+      descr: 佛系青年
+      siteshot: https://cdn.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
+    - name: iMaeGoo’s Blog
+      link: https://www.imaegoo.com
+      avatar: https://www.imaegoo.com/images/avatar.jpg
+      descr: 虹墨空间站
+    - name: Kaygb's Blog
+      link: https://blog.kaygb.com
+      avatar: https://cdn.jsdelivr.net/gh/kaygb/twentytwenty/kaygbcom/icon/f1.jpg
+      descr: 柯泽大佬  
+    - name: PluShine
+      link: https://plushine.cn/
+      avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/touxiang.jpg
+      descr: 欢迎来到 XJHui's Blog！有疑问可以到 “留言板” 提问！^_^  
+- class_name: 好友
+  class_desc: 
+  link_list:
+    - name: Ethan_Xiao
+      link: http://ethanxiao99.com
+      avatar: http://ethanxiao99.com/img/touxiang.jpg
+      descr: 一个笨比
+    - name: 隆中博客
+      link: https://longzhong.cc
+      avatar: https://longzhong.cc/usr/uploads/login.jpg
+      descr: 有钱终成眷属，没钱亲眼目睹
+    - name: Dragon 犬’s blog
+      link: https://blog.furrysp.top
+      avatar: https://gravatar.loli.net/avatar/26fb4e9d679e499d8545df9f2aea519c?d=monsterid&v=1.4.14
+      descr: あなたは主人公になりたいですか？
