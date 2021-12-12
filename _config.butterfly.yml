@@ -8,6 +8,7 @@
 
 menu:
    首页: / || fas fa-home
+   Docsify:  http://doc.weilong98.com || fab fa-docker
    文章||fas fa-book:
     时间轴: /archives/ || fas fa-archive
     标签: /tags/ || fas fa-tags
