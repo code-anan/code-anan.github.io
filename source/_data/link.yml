@@ -1,11 +1,6 @@
 - class_name: 网站推荐
   class_desc: 个人觉得还不错的网站（不定期更新）
   link_list:
-    - name: Hexo
-      link: https://hexo.io/zh-tw/
-      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
-      descr: 快速、简单且强大的网誌框架
-      siteshot: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
     - name: KuangStudy
       link: https://www.kuangstudy.com/
       avatar: https://thirdwx.qlogo.cn/mmopen/vi_32/p2kibtCm4Z9p8aDSL0oQRl67AZ7dPebnLV9ibZtsQP8CGQeLeKfuiaeLmdl4KDzNTYM5M3UJ46ZBmOJDPDwsAsn0w/132
@@ -49,11 +44,6 @@
 - class_name: 大佬推荐
   class_desc: 
   link_list:
-    - name: Jerry
-      link: https://butterfly.js.org/
-      avatar: https://butterfly.js.org/img/avatar.png
-      descr: 关于butterfly主题的基本设置 他的文章特别详细很适合新手 
-      siteshot:
     - name: 小嘉的部落格
       link: https://blog.imzjw.cn/posts/b74f504f/
       avatar: https://cdn.jsdelivr.net/npm/nanshen/avatar.jpg
@@ -73,10 +63,6 @@
       link: https://www.imaegoo.com
       avatar: https://www.imaegoo.com/images/avatar.jpg
       descr: 虹墨空间站
-    - name: Kaygb's Blog
-      link: https://blog.kaygb.com
-      avatar: https://cdn.jsdelivr.net/gh/kaygb/twentytwenty/kaygbcom/icon/f1.jpg
-      descr: 柯泽大佬  
     - name: PluShine
       link: https://plushine.cn/
       avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/touxiang.jpg
