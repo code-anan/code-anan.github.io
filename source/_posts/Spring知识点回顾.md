@@ -263,7 +263,7 @@ spring的配置文件中
 </bean>
 ```
 
-autowire="buName":需要保证的引用类型的属性名和配置文件中的bean标签中的id保持一致且数据类型一致，这样就能够赋值给引用类型
+autowire="byName":需要保证的引用类型的属性名和配置文件中的bean标签中的id保持一致且数据类型一致，这样就能够赋值给引用类型
 
 * 按照类型注入
 
@@ -281,7 +281,7 @@ autowire="buName":需要保证的引用类型的属性名和配置文件中的be
 </bean>
 ```
 
-autowire="buType":java类中引用类型的数据类型(上面那个bean中)和配置文件bean的class属性（下面的bean）是有同源关系的，这样的bean能够赋值给引用类型
+autowire="byType":java类中引用类型的数据类型(上面那个bean中)和配置文件bean的class属性（下面的bean）是有同源关系的，这样的bean能够赋值给引用类型
 
 同源关系：一样、父子类关系、接口和实现类关系
 
@@ -324,7 +324,7 @@ servlet、listener和filter等
 
 ####  加入spring-context依赖
 
-加入Spring-context的同时，也间接的加入了Spring-aop的依赖，使用注解就需要这个依赖
+加入Spring-context(上面加过了)的同时，也间接的加入了Spring-aop的依赖，使用注解就需要这个依赖
 
 #### 类中加入spring的注解
 
@@ -332,7 +332,7 @@ servlet、listener和filter等
 
 @component:创建对象 等同于bean标签的作用
 
-value就是对象的名称 也就是bean的id值 并且唯一不重 value可忽略不写 如果不指定对象名称 默认为类名的首字符小写
+value就是对象的名称 也就是bean的id值 并且唯一不重复 value可忽略不写 如果不指定对象名称 默认为类名的首字符小写
 
 与@Component功能一致的其他注解：
 
@@ -382,7 +382,7 @@ base-package：指定添加注解的包名
 如果要使用byName的方式，则需要添加@Qualifier注解
 
 ```java
-@Value(value = "2")
+    @Value(value = "2")
     private int id;
 
     @Value("张三")
@@ -396,7 +396,7 @@ base-package：指定添加注解的包名
     private School school;
 ```
 
-School类中应为：
+School类中应为(名称需要跟@Qualifier的value值一致)：
 
 ```java
 @Component("aSchool")
@@ -458,7 +458,7 @@ required=false:表示引用类型如果赋值失败，程序可以正常执行�
 
 ### Resource注解
 
-jdk中的一个注解，可以用它给引用类型赋值使用的也是自动注入原理，支持byType、byName但是默认的byName
+jdk中的一个注解，可以用它给引用类型赋值使用的也是自动注入原理，支持byType、byName两种方式并且默认的是byName
 
 位置可以放在属性定义上也可以放到set方法上
 
@@ -675,7 +675,7 @@ public class Test {
 我们在上述接口和实现类新增一个有参数的方法
 
 ```java
-@Override
+    @Override
     public void dosome(String str, Integer i) {
         System.out.println(str+"的年龄是"+i);
     }
@@ -1031,9 +1031,8 @@ public class Student {
 dao接口：
 
 ```java
-
 public interface StudentDao {
-        List<Student> queryAllStudent();
+    List<Student> queryAllStudent();
 }
 ```
 
@@ -1076,7 +1075,6 @@ service接口:
 public interface StudentService {
     List<Student> queryAllStudent();
 }
-
 ```
 
 我们这里同样写一个查询所有学生的接口
@@ -1142,7 +1140,6 @@ public class StudentServiceImpl implements StudentService {
         <bean id="myservice" class="org.example.service.impl.StudentServiceImpl">
                 <property name="studentDao" ref="studentDao"/>
         </bean>
-       <context:property-placeholder location="classpath:jdbc.properties"/>
 </beans>
 ```
 
@@ -1701,7 +1698,7 @@ public class StudentServiceImpl implements StudentService {
 
 ## 对应的属性文件
 
-```prop
+```properties
 jdbc.url=jdbc:mysql://localhost:3306/lwl
 jdbc.username=root
 jdbc.passwd=233
@@ -1712,7 +1709,7 @@ jdbc.max=30
 
 为了方便直接就jsp页面了
 
-```jsp
+```html
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -1840,7 +1837,7 @@ web项目中容器对象只需要创建一次，把容器对象放到全局作�
  <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:applicationContext.xml</param-value>
-    </context-param>
+</context-param>
 ```
 
 ### servlet代码修改
