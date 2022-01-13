@@ -1,13 +1,13 @@
 title: mybatis知识点回顾
 author: lwl
 cover: https://cdn.jsdelivr.net/gh/code-anan/image/20211224140144.png
-tags:
-  - mybatis
 categories:
-- mybatis
-- 记录
+  - mybatis
+  - 记录
 my: post/mybatis
 date: 2021-12-24 14:03
+tags:
+  - mybatis
 ------
 
 # JDBC的缺陷
@@ -433,7 +433,7 @@ mybatis.xml中引入jdbc.properties：
 
 然后jdbc.properties文件放入数据库信息
 
-```
+```properties
 jdbc.driver=com.mysql.jdbc.Driver
 jdbc.url=jdbc:mysql://localhost:3306/lwl
 jdbc.username=root

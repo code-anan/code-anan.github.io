@@ -41,7 +41,12 @@
       avatar: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---c-ssl.duitang.com-uploads-item-201511-12-20151112165645_jPuFy.jpeg&refer=http---c-ssl.duitang.jpg
       descr: 无聊的时候可以玩一玩
       siteshot: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---c-ssl.duitang.com-uploads-item-201511-12-20151112165645_jPuFy.jpeg&refer=http---c-ssl.duitang.jpg
-- class_name: 大佬推荐
+    - name: 召唤神龙
+      link: https://www.mutegame.com/170
+      avatar: https://img1.baidu.com/it/u=420232681,398376754&fm=26&fmt=auto
+      descr: 能把人气哭的游戏
+      siteshot: https://img1.baidu.com/it/u=420232681,398376754&fm=26&fmt=auto
+- class_name: 大佬推荐     
   class_desc: 
   link_list:
     - name: 小嘉的部落格
