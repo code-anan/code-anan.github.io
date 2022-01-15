@@ -913,7 +913,25 @@ Student{id=5, name='恋柱', age=13}
 =====拦截后
 ```
 
-可以看到后面两个方法是在目标方法之后执行的，所以我们要验证登陆之类的只需要在preHandle里面进行判断即可
+可以看到后面两个方法是在目标方法之后执行的，所以我们要验证登陆之类的只需要在preHandle里面进行判断即可,例如：
+
+```java
+public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        Cookie[] cookies = request.getCookies();
+        for(Cookie cookie:cookies){
+            if(cookie.getName().equals("user")){
+                return true;
+            }
+        }
+        if(request.getRequestURI().contains("login")){
+            return true;
+        }else{
+            //request.getRequestDispatcher("login").forward(request,response);
+            response.sendRedirect("login");
+        }
+        return false;
+    }
+```
 
 ## 拦截器和过滤器的区别
 
@@ -922,3 +940,19 @@ Student{id=5, name='恋柱', age=13}
 * 过滤器用来设置request、response的参数属性，侧重对数据的过滤；拦截器是用来验证请求，能截断请求
 * 过滤器在拦截器之前执行
 * 过滤器可以处理jsp html等；拦截器拦截Controller的对象
+
+# SpringMVC执行原理
+1. 用户发起一个请求
+2. DispatcherServlet接收请求并把请求转交给处理器映射器
+   处理器映射器：Springmvc框架中的一种对象，框架把实现了HandlerMapping的类都叫做映射器（可以有多个）
+   处理器映射器作用：根据请求， 从Springmvc容器对象中获取处理器对象，框架把找到的处理器对象放到一个叫做处理器执行链的类（HandlerExecutionChain）保存
+   HandlerExecutionChain：类中保存着处理器对象和项目中所有的拦截器
+3. DispatcherServlet把HandlerExecutionChain中的处理器对象都交给处理器适配器（可以有多个）
+   处理器适配器：Springmnvc框架中的对象，需要实现HandlerAdapter接口
+   处理器适配作用：执行处理器方法获取返回值
+4. DispatcherServlet把适配器返回来的值比如ModelAndview交给视图解析器对象
+   视图解析器：Springmvc框架中的对象，需要实现viewResolver接口
+   视图解析器作用：组成视图完整路径，使用前缀后缀并创建view对象，view是一个接口表示视图，在框架中jsp、html不是String表示，而是使用view和他的实现类表示视图
+   InternalResourceView：视图类，表示jsp文件，视图解析器会创建InternalResourceView类对象，这个对象里面有一个属性url
+5. DispatcherServlet把创建的view对象获取到调用view类自己的方法，把model数据放入到request作用域，执行视图对象的forward，请求结束
+  流程图如下：![](https://cdn.jsdelivr.net/gh/code-anan/image/20220115124658.png)
