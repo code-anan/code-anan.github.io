@@ -1,11 +1,11 @@
-tags:
-  - SpringMVC
-categories:
-  - 框架
-  - SpringMVC
 cover: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---www.downkr.com-uploadfile-2021-0720-227530089.jpg&refer=http---www.downkr.jpg
 my: post/SpringMVCkeys
 title: SpringMVC知识点回顾
+categories:
+  - 框架
+  - SpringMVC
+tags:
+  - SpringMVC
 ------
 
 #  概述
@@ -956,3 +956,138 @@ public boolean preHandle(HttpServletRequest request, HttpServletResponse respons
    InternalResourceView：视图类，表示jsp文件，视图解析器会创建InternalResourceView类对象，这个对象里面有一个属性url
 5. DispatcherServlet把创建的view对象获取到调用view类自己的方法，把model数据放入到request作用域，执行视图对象的forward，请求结束
   流程图如下：![](https://cdn.jsdelivr.net/gh/code-anan/image/20220115124658.png)
+
+# 文件上传与下载
+
+## 添加依赖
+
+```xml
+<dependency>
+  <groupId>commons-fileupload</groupId>
+  <artifactId>commons-fileupload</artifactId>
+  <version>1.4</version>
+</dependency>
+<dependency>
+  <groupId>javax.servlet</groupId>
+  <artifactId>javax.servlet-api</artifactId>
+  <version>4.0.1</version>
+</dependency>
+```
+
+注意这里需要引入高版本的servlet依赖把低版本的删掉，否则缺少方法
+
+## 前段页面
+
+```jsp
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>文件上传</title>
+</head>
+<body>
+<form action="/upload" enctype="multipart/form-data" method="post">
+    <input type="file" name="file">
+    <input type="submit" value="上传">
+</form>
+</body>
+</html>
+```
+
+只要有个文件上传功能即可
+
+## Springmvc配置文件
+
+```xml
+<!--文件上传配置-->
+    <bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="commonsMultipartResolver">
+        <!--请求的编码格式，需要和前段页面保持一致，默认为ISO-8859-1-->
+        <property name="defaultEncoding" value="utf-8"/>
+        <!--上传文件大小上限，单位是字节，（1M=10485760）-->
+        <property name="maxUploadSize" value="10485760"/>
+        <property name="maxInMemorySize" value="40960"/>
+     </bean>
+```
+
+## 接收处理
+
+上传文件：
+
+```java
+@RestController
+public class FileController {
+    //@RequestParam("file")把name=file的控件封装成CommonsMultipartFile对象
+    @RequestMapping("/upload")
+    public String uploadFile(@RequestParam("file") CommonsMultipartFile file, HttpServletRequest request) throws IOException {
+        //获取文件名
+        String filename = file.getOriginalFilename();
+
+        //判断文件名是否为空
+        if("".equals(filename)){
+            return "redirect:/index.jsp";
+        }
+        System.out.println("上传文件名"+filename);
+
+        //上传路径保存设置
+        String path = request.getServletContext().getRealPath("/upload");
+        //如果路径不存在，创建一个
+        File realFile = new File(path);
+        if(!realFile.exists()){
+            realFile.mkdir();
+        }
+        System.out.println("上传文件路径："+realFile);
+        //获取输入输出流
+        InputStream inputStream = file.getInputStream();
+        OutputStream outputStream = new FileOutputStream(new File(realFile, filename));
+
+        //读文件
+        int length=0;
+        byte[] bytes = new byte[1024];
+        while ((length=inputStream.read(bytes))!=-1){
+            outputStream.write(bytes,0,length);
+            outputStream.flush();
+        }
+        inputStream.close();
+        outputStream.close();
+        return "redirect:/index.jsp";
+    }
+}
+```
+
+下载文件：
+
+```java
+    @RequestMapping("/download")
+    public String download(HttpServletRequest request, HttpServletResponse response,@RequestParam("filename") String filename) throws IOException {
+        //要下载的图片地址
+        String path = request.getServletContext().getRealPath("/upload");
+
+
+        //设置response响应头
+        response.reset(); //设置页面不缓存
+        response.setCharacterEncoding("utf-8");
+        response.setContentType("multipart/form-data");
+
+        response.setHeader("Content-Disposition","attatchment;fileName="+ URLEncoder.encode(filename,"UTF-8"));
+        File file = new File(path, filename);
+        //读取文件
+        InputStream input = new FileInputStream(file);
+        //写出文件
+        OutputStream output = response.getOutputStream();
+
+        //读文件
+        int length=0;
+        byte[] bytes = new byte[1024];
+        while ((length=input.read(bytes))!=-1){
+            output.write(bytes,0,length);
+            output.flush();
+        }
+        input.close();
+        output.close();
+        return "ok";
+    }
+```
+
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220116201701.png)
+
+好了，Springmvc差不多就这些结束(￣▽￣)~*
+
