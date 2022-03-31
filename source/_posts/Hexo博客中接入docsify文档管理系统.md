@@ -29,7 +29,7 @@ date: 2021-12-12 16:50:26
 给新建的仓库添加一个文件 内容为从刚才的仓库名![](https://cdn.jsdelivr.net/gh/code-anan/image/20211211200200.png)
 ## 初始化文档(cmd窗口中)
    > docsify init docs
-   > 
+   >
    > Initialization succeeded! Please run docsify serve docs
 
 出现succeeded即为初始化成功，初始化成功后会生成三个文件
@@ -93,7 +93,7 @@ date: 2021-12-12 16:50:26
 ## 拷贝项目
 首先  拷贝我们新建的仓库到本地
 > git clone https://github.com/code-anan/doc.weilong98.com.git
-git clone后面为我们创建的仓库地址
+> git clone后面为我们创建的仓库地址
 
 ## 拷贝文件
 然后把`docs`也就是刚才初始化的docsify项目中的所有文件copy到本地仓库`doc.weilong98.com`中
@@ -104,18 +104,18 @@ git clone后面为我们创建的仓库地址
 
 ## 上传仓库
 把项目上传到仓库（输入一些常用的命令即可）
-   
+
    ![](https://cdn.jsdelivr.net/gh/code-anan/image/20211212155022.png)
 
 ## 解析配置
 然后还需要来到我们的域名控制台-解析设置中添加以下记录（记录值为我们hexo的域名）
-   
+
    ![](https://cdn.jsdelivr.net/gh/code-anan/image/20211212161259.png)
 ## 分支保存
 来到仓库-settigns-pages选择我们的分支默认为main分支保存即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20211212160759.png)然后我们的Custom domain也自动输入上去了
 ## 仓库名访问
 然后可以直接访问我们的docsif文档了
-   
+
    ![](https://cdn.jsdelivr.net/gh/code-anan/image/20211212161442.png)
 
 # hexo博客中引入doscify
