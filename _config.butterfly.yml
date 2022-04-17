@@ -91,14 +91,14 @@ favicon: https://cdn.jsdelivr.net/gh/code-anan/image/蜘蛛网万圣节.png
 
 # Avatar (頭像)
 avatar:
-  img: https://cdn.jsdelivr.net/gh/code-anan/image/avators.jpg
+  img: https://cdn.jsdelivr.net/gh/code-anan/image/newavator.jpg
   effect: false
 
 # Disable all banner image
 disable_top_img: false
 
 # The banner image of home page
-index_img: https://cdn.jsdelivr.net/gh/code-anan/image/mao.jpg
+index_img: https://cdn.jsdelivr.net/gh/code-anan/image/iTab-lmk1vq.png
 
 # If the banner of page not setting, it will show the top_img
 default_top_img: 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
