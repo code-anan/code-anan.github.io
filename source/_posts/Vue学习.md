@@ -128,8 +128,8 @@ data中除了自定义的值，还可以引用外面定义的值，比如上面�
             console.log("beforeMount")
         },
         //el被新创建的wm.$el替换，挂载成功
-        mouted:function () {
-            console.log("Mount")
+        mounted:function () {
+            console.log("mounted")
         },
         //数据更新时调用
         beforeUpdate:function () {
@@ -672,137 +672,897 @@ cnpm install -g webpack
 
 ![](https://cdn.jsdelivr.net/gh/code-anan/image/20220116133707.png)这里引入的就是单文件组件的方式了，当然可以自己定义一个组件进行使用
 
-# 免终端开发vue应用
+# Axios异步通信
 
-商业级别项目不会在html页面中内嵌使用vue这种方式，这种方式无论是搭建运行还是发布以及安装各种流行的组件库都比较繁琐，为了解决这个问题常常采用`uni-app`加`HBuilderX`的方式，前者是框架后者是IDE，它们互相搭配，使得基于vue.js开发项目变得更简单高效
+Axios是一个开源的可以用在浏览器端和`NodeJS`的异步通信框架，主要作用是实现ajax异步通信，其功能特点如下
 
-## 使用步骤
+*  从浏览器创建`XMLHttpRequests`
+*  从Nodejs创建http请求
+*  支持Promise API
+*  拦截请求和响应
+*  转换请求数据和响应数据、取消请求
+*  自动转换json数据
+*  客户端支持防御XSRF（跨站请求伪造）
 
-### 创建uni-app项目
+cdn地址：`<script src="https://unpkg.com/axios/dist/axios.min.js"></script>`
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220116135003.png)
+官网地址：[axios中文网|axios API 中文文档 | axios (axios-js.com)](http://www.axios-js.com/)
 
-选择默认模板即可
+实例如下：
 
-### 项目结构
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+<span>{{info.name}}</span>
+<span>{{info.url}}</span>
+<li v-for="item in info.links">
+    <span >{{item.name}}</span>
+    <span >{{item.url}}</span>
+</li>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220116180743.png)
+<script>
 
-###  HbuilderX使用
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220116181209.png)
+    var vue = new Vue({
+        el:"#app",
+        data(){
+            return{
+                info:{
+                }
+            }
+        },
+        mounted(){
+            axios.get('../data.json').then(res=> {
+                    console.log(res)
+                    this.info=res.data
+            })
+        },
+    });
+</script>
+</body>
+</html>
+```
 
-上方可以选择在浏览器运行，并一键发布生成需要的html页面，并且可以前往插件市场安装我们需要的插件，例如使用less语言我们找到less编译插件即可
+说明：Vue的开发都是基于NodeJs，实际开发采用vue-cli脚手架开发、vue-router路由。vuex做状态管理；Vue UI界面我们一般使用ElementUI或者ICE来快速搭建前端项目
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220116181642.png)
+# Vue-cli
 
-### 插件使用
+vue-cli是官方提供的一个脚手架用于快速生成一个vue的项目模板，类似于创建maven项目创建一个骨架，需要提前下载nodejs即可
 
-在[插件市场](https://ext.dcloud.net.cn)找到一款插件导入到项目中，选择`使用HBuilderX导入插件`
+## 安装
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220116182533.png)
+`cnpm install vue-cli -g`
 
-并且文档中有着详细的使用说明，例如这一个插件我们在index.vue中加入
+`vue list`查看可以基于哪些模板创建vue应用程序，通畅选择webpack
+
+## 第一个vue-cli应用程序
+
+首先创建一个vue项目，只需要创建一个文件夹即可
+
+使用`vue init webpack myvue`创建一个基于webpack模板的vue应用程序
+
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220417155409.png)
+
+来到我们的项目下执行`npm install`安装所有的依赖，可能会失败按照提示修复一下即可
+
+`npm run dev`运行dev环境![](https://cdn.jsdelivr.net/gh/code-anan/image/20220417155839.png)![](https://cdn.jsdelivr.net/gh/code-anan/image/20220417155854.png)
+
+# Vue Router
+
+vue router是vue官方的路由管理器，他和vue到的核心深度集成，让构建单页面应用变得易如反掌
+
+## 安装使用
+
+`npm install vue-router  --save-dev `
+
+然后在组件化的项目中使用的话需要显示的进行声明
+
+```js
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter);
+```
+
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220417165005.png)
+
+但是实际项目开发，我们会把路由配置专门创建一个`router/index.js`之后在main.js中引用即可
+
+```js
+import Vue from 'vue'
+import App from './App'
+import router from './router'
+
+Vue.config.productionTip = false
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  router,
+  components: { App },
+  template: '<App/>'
+})
+
+```
+
+router中的index.js写具体的路由配置
+
+```js
+import Vue from 'vue'
+import Router from 'vue-router'
+import HelloWorld from '@/components/HelloWorld'
+import newpage from '@/components/newpage'
+
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+      path: '/hello',
+      name: 'HelloWorld',
+      component: HelloWorld
+    },
+    {
+      path: '/newpage',
+      name: 'newpage',
+      component: newpage
+    }
+  ]
+})
+```
+
+最后在入口app.vue中template标签内使用即可
 
 ```html
 <template>
-	<view class="content">
-		<!-- 在 template 中使用组件 -->
-		<yp-number-box></yp-number-box>
-		<yp-number-box :min="0" :max="9"></yp-number-box>
-		<yp-number-box @change="bindChange"></yp-number-box>
-		<yp-number-box @change="change" :index="index" />  
-	</view>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <router-link to="/hello">Hello</router-link>
+    <router-link to="/newpage">newpage</router-link>
+    <router-view/>
+  </div>
 </template>
-
-<script>
-	import ypNumberBox from "@/components/yp-number-box/yp-number-box.vue" //在 script 中引用组件
-	export default {
-		data() {
-			return {
-				title: 'Hello baby'
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
-		},
-		components: {ypNumberBox} //在 script 中引用组件
-	}
-	
-</script>
-
-<style>
-	.content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.logo {
-		height: 200rpx;
-		width: 200rpx;
-		margin-top: 200rpx;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 50rpx;
-	}
-
-	.text-area {
-		display: flex;
-		justify-content: center;
-	}
-
-	.title {
-		font-size: 36rpx;
-		color: #8f8f94;
-	}
-</style>
 ```
 
-### 自定义组件
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220418110809.png)
 
-在`commponents`目录下右键选择新建组件![](https://cdn.jsdelivr.net/gh/code-anan/image/20220116183454.png)
 
-编写内容
 
-```html
+可以看到他并不是跳转页面 而是组件之间的路由 这就是vue的特点
+
+# Vue+ElementUI实例
+
+官网：[Element - 网站快速成型工具](https://element.eleme.io/#/zh-CN)
+
+## 创建工程
+
+`vue init webpack hello-vue`还是先初始化一个项目（这里可以选择安装vue-router方便其他项看需求选择）
+
+`cd hello-vue`进入项目
+
+`npm i element-ui -S`安装elementUI
+
+`npm insall`安装依赖
+
+`cnpm install sass-loader node-sass --save-dev`安装sass加载器
+
+`npm run dev`启动项目
+
+npm命令说明
+
+> npm install moduleName：安装模块到项目目录下
+>
+> npm install -g moduleName：-g的意思是将模块安装到全局，具体安装到磁盘哪个位置要看npm
+>
+> config prefix的位置
+>
+> npm install -save moduleName：–save的意思是将模块安装到项目目录下， 并在package文件的dependencies节点写入依赖，-S为该命令的缩写
+>
+> npm install -save-dev moduleName:–save-dev的意思是将模块安装到项目目录下，并在package文件的devDependencies节点写入依赖，-D为该命令的缩写
+
+创建好工程之后，我们可以把自动生成的hello组件删掉，生成我们自己的组件
+
+main.vue
+
+```vue
 <template>
-	<view>
-		<h1>{{tilte}}</h1>
-		<div>{{content}}</div>
-	</view>
+  <div>首页</div>
+</template>
+<script>
+  export default {
+    name:"Main"
+  }
+</script>
+<style scoped>
+</style>
+
+```
+
+login.vue
+
+```vue
+<template>
+  <div>
+    <el-form ref="loginForm" :model="form" :rules="rules" label-width="80px" class="login-box">
+      <h3 class="login-title">欢迎登录</h3>
+      <el-form-item label="账号" prop="username">
+        <el-input type="text" placeholder="请输入账号" v-model="form.username"/>
+      </el-form-item>
+      <el-form-item label="密码" prop="password">
+        <el-input type="password" placeholder="请输入密码" v-model="form.password"/>
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" v-on:click="onsubmit('loginForm')">登录</el-button>
+      </el-form-item>
+    </el-form>
+
+    <el-dialog title="温馨提示" :visible.sync="dialogVisiable" width="30%" :before-close="handleClose">
+      <span>请输入账号和密码</span>
+      <span slot="footer" class="dialog-footer">
+          <el-button type="primary" @click="dialogVisible = false">确定</el-button>
+        </span>
+    </el-dialog>
+  </div>
 </template>
 
 <script>
-	export default {
-		props:{
-			tilte:{
-				type:String,
-				default:"默认标题"
-			},
-			content:{
-				type:String,
-				default:"默认内容"
-			}
-		},
-		name:"mycomponent",
-		data() {
-			return {
-				
-			};
-		}
-	}
+  export default {
+    name: "Login",
+    data(){
+      return{
+        form:{
+          username:'',
+          password:''
+        },
+        //表单验证，需要在 el-form-item 元素中增加prop属性
+        rules:{
+          username:[
+            {required:true,message:"账号不可为空",trigger:"blur"}
+          ],
+          password:[
+            {required:true,message:"密码不可为空",tigger:"blur"}
+          ]
+        },
+
+        //对话框显示和隐藏
+        dialogVisible:false
+      }
+    },
+    methods:{
+      onsubmit(formName){
+        //为表单绑定验证功能
+        this.$refs[formName].validate((valid)=>{
+          if(valid){
+            //使用vue-router路由到指定界面，该方式称为编程式导航
+            alert("123")
+            this.$router.push('/main');
+          }else{
+            this.dialogVisible=true;
+            return false;
+          }
+        });
+      }
+    }
+  }
+</script>
+
+<style lang="scss" scoped>
+  .login-box{
+    border:1px solid #DCDFE6;
+    width: 350px;
+    margin:180px auto;
+    padding: 35px 35px 15px 35px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 0 25px #909399;
+  }
+  .login-title{
+    text-align:center;
+    margin: 0 auto 40px auto;
+    color: #303133;
+  }
+</style>
+
+```
+
+main.js
+
+```js
+import Vue from 'vue'
+import App from './App'
+import router from './router'
+
+Vue.config.productionTip = false
+
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
+
+new Vue({
+  el: '#app',
+  router,
+  render: h => h(App)
+})
+```
+
+index.js
+
+```js
+import Vue from 'vue'
+import Router from 'vue-router'
+import main from '@/components/main'
+import login from '@/components/login'
+
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'main',
+      component: main
+    },{
+      path: '/login',
+      name: 'login',
+      component: login
+    }
+  ]
+})
+```
+
+App.vue
+
+```vue
+<template>
+  <div id="app">
+    <router-link to="/login">登录</router-link>
+    <router-view/>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App'
+}
 </script>
 
 <style>
 
 </style>
+
 ```
 
-然后在index,vue中引入即可，在`template`标签中使用![](https://cdn.jsdelivr.net/gh/code-anan/image/20220116184454.png)
+效果：![](https://cdn.jsdelivr.net/gh/code-anan/image/20220418150519.png)
 
-vue内部还有很多，对于java程序员来说能熟练掌握这些常用的知识以及足够啦(*^▽^*)
+## 错误解决
+
+运行可能出现的错误：`Module build failed: TypeError: this.getOptions is not a function`
+
+解决方案
+
+```tex
+##先卸掉原来的高版本
+npm uninstall sass-loader
+##安装合适的版本的sass
+npm install sass-loader@7.3.1 --save-dev
+##这时候可能还会报错Module build failed: Error: Node Sass version 7.0.1 is incompatible with ^4.0.0.
+npm uninstall node-sass
+npm i -D sass
+##执行之后重新运行
+npm run dev
+```
+
+## 路由嵌套
+
+components下新建一个user文件夹
+
+list.vue
+
+```vue
+<template>
+  <h1>用户列表</h1>
+</template>
+<script>
+  export default {
+    name: "UserList"
+  }
+</script>
+<style scoped>
+</style>
+
+```
+
+profile.vue
+
+```vue
+<template>
+  <h1>个人信息</h1>
+</template>
+<script>
+  export default {
+    name: "UserProfile"
+  }
+</script>
+<style scoped>
+</style>
+
+```
+
+路由设置index.js
+
+```vue
+import Vue from 'vue'
+import Router from 'vue-router'
+import main from '@/components/main'
+import login from '@/components/login'
+import list from '@/components/user/list'
+import profile from '@/components/user/Profile'
+
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+      path: '/main',
+      name: 'main',
+      component: main,
+      children: [{
+        path: '/user/profile', component: profile,
+
+      }, {
+        path: '/user/list', component: list,
+
+      }]
+    }, {
+      path: '/login',
+      name: 'login',
+      component: login
+    }
+  ]
+})
+
+```
+
+主页面main.js
+
+```js
+<template>
+  <div>
+    <el-container>
+      <el-aside width="200px">
+        <el-menu :default-openeds="['1']">
+          <el-submenu index="1">
+            <template slot="title"><i class="el-icon-caret-right"></i>用户管理</template>
+            <el-menu-item-group>
+              <el-menu-item index="1-1">
+                <!--插入的地方-->
+                <router-link to="/user/profile">个人信息</router-link>
+              </el-menu-item>
+              <el-menu-item index="1-2">
+                <!--插入的地方-->
+                <router-link to="/user/list">用户列表</router-link>
+              </el-menu-item>
+            </el-menu-item-group>
+          </el-submenu>
+          <el-submenu index="2">
+            <template slot="title"><i class="el-icon-caret-right"></i>内容管理</template>
+            <el-menu-item-group>
+              <el-menu-item index="2-1">分类管理</el-menu-item>
+              <el-menu-item index="2-2">内容列表</el-menu-item>
+            </el-menu-item-group>
+          </el-submenu>
+        </el-menu>
+      </el-aside>
+
+      <el-container>
+        <el-header style="text-align: right; font-size: 12px">
+          <el-dropdown>
+            <i class="el-icon-setting" style="margin-right: 15px"></i>
+            <el-dropdown-menu slot="dropdown">
+              <el-dropdown-item>个人信息</el-dropdown-item>
+              <el-dropdown-item>退出登录</el-dropdown-item>
+            </el-dropdown-menu>
+          </el-dropdown>
+        </el-header>
+        <el-main>
+          <!--在这里展示视图-->
+          <router-view />
+        </el-main>
+      </el-container>
+    </el-container>
+  </div>
+</template>
+<script>
+  export default {
+    name: "Main"
+  }
+</script>
+<style scoped lang="scss">
+  .el-header {
+    background-color: #B3C0D1;
+    color: #333;
+    line-height: 60px;
+  }
+  .el-aside {
+    color: #333;
+  }
+</style>
+```
+
+路由嵌套说白了就是在一个路由下有n个子路由 使用`children`即可
+
+## 参数传递及重定向
+
+依然使用上面的示例
+
+main.js
+
+```js
+<template>
+  <div>
+    <el-container>
+      <el-aside width="200px">
+        <el-menu :default-openeds="['1']">
+          <el-submenu index="1">
+            <template slot="title"><i class="el-icon-caret-right"></i>用户管理</template>
+            <el-menu-item-group>
+              <el-menu-item index="1-1">
+                <!--插入的地方-->
+                <router-link :to="{name:'profile',params:{name:'皮卡丘'}}">个人信息</router-link>
+              </el-menu-item>
+              <el-menu-item index="1-2">
+                <!--插入的地方-->
+                <router-link to="/user/list">用户列表</router-link>
+              </el-menu-item>
+            </el-menu-item-group>
+          </el-submenu>
+          <el-submenu index="2">
+            <template slot="title"><i class="el-icon-caret-right"></i>内容管理</template>
+            <el-menu-item-group>
+              <el-menu-item index="2-1">分类管理</el-menu-item>
+              <el-menu-item index="2-2">内容列表</el-menu-item>
+            </el-menu-item-group>
+          </el-submenu>
+        </el-menu>
+      </el-aside>
+
+      <el-container>
+        <el-header style="text-align: right; font-size: 12px">
+          <el-dropdown>
+            <i class="el-icon-setting" style="margin-right: 15px"></i>
+            <el-dropdown-menu slot="dropdown">
+              <el-dropdown-item>个人信息</el-dropdown-item>
+              <el-dropdown-item>退出登录</el-dropdown-item>
+            </el-dropdown-menu>
+          </el-dropdown>
+        </el-header>
+        <el-main>
+          <!--在这里展示视图-->
+          <router-view />
+        </el-main>
+      </el-container>
+    </el-container>
+  </div>
+</template>
+<script>
+  export default {
+    name: "Main"
+  }
+</script>
+<style scoped lang="scss">
+  .el-header {
+    background-color: #B3C0D1;
+    color: #333;
+    line-height: 60px;
+  }
+  .el-aside {
+    color: #333;
+  }
+</style>
+```
+
+router下的index.js
+
+```js
+import Vue from 'vue'
+import Router from 'vue-router'
+import main from '@/components/main'
+import login from '@/components/login'
+import list from '@/components/user/list'
+import profile from '@/components/user/Profile'
+
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+      path: '/main',
+      name: 'main',
+      component: main,
+      children: [{
+        path: '/user/profile/:name', name:'profile',component: profile,
+
+      }, {
+        path: '/user/list', component: list,
+
+      }]
+    }, {
+      path: '/login',
+      name: 'login',
+      component: login
+    }
+  ]
+})
+```
+
+注意这里也可以加上props设为true这样就可以在组件中获取参数`path: '/user/profile/:name', name:'profile',component: profile,props:true`
+
+profile.vue
+
+```vue
+<template>
+  <div>
+    <h1>个人信息</h1>
+    {{$route.params.name}}
+    {{name}}
+  </div>
+
+</template>
+<script>
+  export default {
+    props:['name'],
+    name: "UserProfile"
+  }
+</script>
+<style scoped>
+</style>
+```
+
+重定向也很简单，在router中的index中新添加个路由即可
+
+```js
+{
+      path: '/gohome',
+      redirect: '/main'
+}
+```
+
+使用我们登录的用户
+
+login.vue
+
+```vue
+ if(valid){
+            //使用vue-router路由到指定界面，该方式称为编程式导航
+            this.$router.push('/main/'+this.form.username);
+```
+
+然后通过路由index.js
+
+```vue
+path: '/main/:name',
+      name: 'main',
+      component: main,
+      props: true,
+      children: [{
+        path: '/user/profile/:name', name:'profile',component: profile,props:true
+```
+
+最后在main.vue中展示
+
+```vue
+<template>
+  <div>
+    <el-container>
+      <el-aside width="200px">
+        <el-menu :default-openeds="['1']">
+          <el-submenu index="1">
+            <template slot="title"><i class="el-icon-caret-right"></i>用户管理</template>
+            <el-menu-item-group>
+              <el-menu-item index="1-1">
+                <!--插入的地方-->
+                <router-link :to="{name:'profile',params:{name:'皮卡丘'}}">个人信息</router-link>
+              </el-menu-item>
+              <el-menu-item index="1-2">
+                <!--插入的地方-->
+                <router-link to="/user/list">用户列表</router-link>
+              </el-menu-item>
+            </el-menu-item-group>
+          </el-submenu>
+          <el-submenu index="2">
+            <template slot="title"><i class="el-icon-caret-right"></i>内容管理</template>
+            <el-menu-item-group>
+              <el-menu-item index="2-1">分类管理</el-menu-item>
+              <el-menu-item index="2-2">内容列表</el-menu-item>
+            </el-menu-item-group>
+          </el-submenu>
+        </el-menu>
+      </el-aside>
+
+      <el-container>
+        <el-header style="text-align: right; font-size: 12px">
+          <el-dropdown>
+            <i class="el-icon-setting" style="margin-right: 15px"></i>
+            <el-dropdown-menu slot="dropdown">
+              <el-dropdown-item>个人信息</el-dropdown-item>
+              <el-dropdown-item>退出登录</el-dropdown-item>
+            </el-dropdown-menu>
+          </el-dropdown>
+          <span>{{name}}</span>
+        </el-header>
+        <el-main>
+          <!--在这里展示视图-->
+          <router-view />
+        </el-main>
+      </el-container>
+    </el-container>
+  </div>
+</template>
+<script>
+  export default {
+    props:['name'],
+    name: "Main"
+  }
+</script>
+<style scoped lang="scss">
+  .el-header {
+    background-color: #B3C0D1;
+    color: #333;
+    line-height: 60px;
+  }
+  .el-aside {
+    color: #333;
+  }
+</style>
+```
+
+## 路由模式与404
+
+hash：路径带#符号 如http://localhost/#/login
+
+history: 路径不带#符号，如http://localhost/login
+
+修改路由模式
+
+```vue
+export default new Router({
+  mode: 'history',
+  routes: [
+    {
+      path: '/main/:name',
+      name: 'main',
+      component: main,
+      props: true,
+      children: [{
+        path: '/user/profile/:name', name:'profile',component: profile,props:true
+
+      }, {
+        path: '/user/list', component: list,
+
+      }]
+    }, {
+      path: '/login',
+      name: 'login',
+      component: login
+    },
+    {
+      path: '/gohome',
+      redirect: '/main'
+    }
+  ]
+})
+```
+
+404页面也是添加个路由新建个页面就行（页面忽略）
+
+```vue
+{
+      path: '*',
+      component: NotFound
+    }
+```
+
+## 路由钩子
+
+beforeRouteEnter:在进入路由前执行
+
+beforeRouteLeave:在离开路由前执行
+
+```js
+<script>
+  export default {
+    props:['name'],
+    name: "UserProfile",
+    beforeRouteEnter:(to,from,next)=>{
+      console.log("在进入路由前执行")
+      next();
+    },
+    beforeRouteLeave:(to,from,next)=>{
+      console.log("在离开路由前执行")
+      next();
+    }
+  }
+</script>
+```
+
+参数说明:
+
+> to:路由将要跳转的路径信息
+>
+> from：路径跳转前的路径信息
+>
+> next：路由的控制参数
+>
+> ​        next()跳入下一个页面
+>
+> ​	next('/path')改变路由的跳转方向，使其跳到另一个路由
+>
+> ​	next（false）返回原来的页面
+>
+> ​	next((vm)=>{})仅在beforeRouteEnter中可用 vm是组件实例
+
+使用axios
+
+安装其组件`npm install --save axios vue-axios`
+
+main.js中加入
+
+```js
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios)
+```
+
+在profile.vue中使用axios获取数据
+
+```vue
+<template>
+  <div>
+    <h1>个人信息</h1>
+    {{$route.params.name}}
+    {{name}}
+  </div>
+
+</template>
+<script>
+  export default {
+    props:['name'],
+    name: "UserProfile",
+    beforeRouteEnter:(to,from,next)=>{
+      console.log("在进入路由前执行")
+      next(vm => {
+            vm.getdata();
+      });
+    },
+    beforeRouteLeave:(to,from,next)=>{
+      console.log("在离开路由前执行")
+      next();
+    },
+    methods:{
+      getdata:function () {
+        this.axios.get("http://localhost:8082/static/data.json").then((response) => {
+          console.log(response.data)
+        })
+      }
+    }
+  }
+</script>
+<style scoped>
+</style>
+```
+
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220419104241.png)
+
+可以看到确实获取到数据了
