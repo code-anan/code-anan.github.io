@@ -49,7 +49,7 @@ social:
    # fas fa-envelope: mailto:719603766@qq.com || Email
    iconfont icon-csdn: https://blog.csdn.net/weixin_50980814?spm=1000.2115.3001.5343 || CSDN
    iconfont icon-QQ: https://cdn.jsdelivr.net/gh/code-anan/image/qq.png || QQ
-   iconfont icon-weibo1: https://weibo.com/u/6295811698 || 微博
+   iconfont icon-weibo: https://weibo.com/u/6295811698 || 微博
    iconfont icon-weixin: https://cdn.jsdelivr.net/gh/code-anan/image/addwx.JPG || 微信
    iconfont icon-bilibili: https://space.bilibili.com/294857924 ||哔哩哔哩
 
@@ -862,13 +862,13 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    - <link rel="stylesheet" href="/css/iconfont.css">
+    - <link rel="stylesheet" href="/css/iconfont.css"> ##个性小图标微博等
     - <link rel="stylesheet" href="/css/texiao.css">
     - "<style>#article-container.post-content h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 1s linear infinite; -moz-animation: avatar_turn_around 1s linear infinite; -o-animation: avatar_turn_around 1s linear infinite; -ms-animation: avatar_turn_around 1s linear infinite; animation: avatar_turn_around 1s linear infinite; }</style>"
 
   bottom:
-    - <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fish.js"></script>
+    - <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script> ##引入jq
+    # - <script src="https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fish.js"></script> ##页脚小鱼
     # - <div class="aplayer no-destroy" data-id="2458585079" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="list" data-preload="auto" data-autoplay="false" muted></div>
     # - <script src="https://cdn.jsdelivr.net/gh/lete114/CDN/Sum/sakura.js"></script> # 樱花动效
     - <script src="https://myhkw.cn/api/player/1628126317116" id="myhk" key="1628126317116" m="1"></script> ##播放器
