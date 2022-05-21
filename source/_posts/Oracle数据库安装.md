@@ -6,7 +6,7 @@ tags:
 categories:
   - 数据库
   - 安装记录
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---www.51wendang.com-pic-edf49c27470e000e62312406-1-807-jpg_6-1077-0-0-1077.jpg&refer=http---www.51wendang.jpg
+cover: https://fastly.jsdelivr.net/gh/code-anan/image/src=http---www.51wendang.com-pic-edf49c27470e000e62312406-1-807-jpg_6-1077-0-0-1077.jpg&refer=http---www.51wendang.jpg
 my: post/oracleinstall
 ---
 # 前言
@@ -17,32 +17,32 @@ PS:本文主要参考[逆流君](https://zhuanlan.zhihu.com/p/152206091)的文�
 网盘地址：`https://pan.baidu.com/s/1JFnNXPAOT2mYamKI1h8qBg`
 提取码：`xh27`
 
-只要下载两个文件即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731092210.png)
+只要下载两个文件即可![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731092210.png)
 
 # 安装步骤
-1. 上面两个压缩吧下载好之后，选中这两个压缩文件同时解压（可能稍微会有点慢），解压完成之后会发现生成一个文件夹名为`database`![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731092532.png)
+1. 上面两个压缩吧下载好之后，选中这两个压缩文件同时解压（可能稍微会有点慢），解压完成之后会发现生成一个文件夹名为`database`![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731092532.png)
 
-2. 进入该文件夹，双击`setup.exe`![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731092837.png)
+2. 进入该文件夹，双击`setup.exe`![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731092837.png)
 
-3. 之后很可能会看到下面的提示，直接忽略掉点击是即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731093114.png)
-4. 去掉勾选接收安全更新![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731093312.png)
-5. 提醒未填写邮件，也是直接忽略点是![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731093433.png)
-6. 然后选择`创建和配置数据库`，下一步![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731093531.png)
-7. 系统类中选择`桌面类`![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731093705.png)
-8. 典型安装配置中，除了口令其他最后按照默认，每个人的可能会不同，需要注意的是口令需要自己输入而且必须有大小写字母和数字且不少于八位字符，这里我设置的是Aa123456，然后继续下一步![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731094034.png)
-9. 概要基本不用看，直接点击`完成`即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731094149.png)
+3. 之后很可能会看到下面的提示，直接忽略掉点击是即可![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731093114.png)
+4. 去掉勾选接收安全更新![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731093312.png)
+5. 提醒未填写邮件，也是直接忽略点是![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731093433.png)
+6. 然后选择`创建和配置数据库`，下一步![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731093531.png)
+7. 系统类中选择`桌面类`![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731093705.png)
+8. 典型安装配置中，除了口令其他最后按照默认，每个人的可能会不同，需要注意的是口令需要自己输入而且必须有大小写字母和数字且不少于八位字符，这里我设置的是Aa123456，然后继续下一步![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731094034.png)
+9. 概要基本不用看，直接点击`完成`即可![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731094149.png)
 10. 然后慢慢等待安装完成。。。。（注意有防火墙拦截某些程序点击允许运行）
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731094247.png)
-11. 安装完成会看到下面界面![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731094746.png)
-12. 上面走完会跳出一下界面，注意千万不要点确定，要选择呢`口令管理`！![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731095349.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731094247.png)
+11. 安装完成会看到下面界面![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731094746.png)
+12. 上面走完会跳出一下界面，注意千万不要点确定，要选择呢`口令管理`！![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731095349.png)
 13. 进入到口令管理中，需要对一下账户做对应操作
     + 找到SYS，将SYS的口令设置为`change_on_install`
     + 找到system，将system口令设置为`manager`
     + 找到SH，设置不锁定账户，口令为`sh`
-    + 找到SCOTT，设置不设定账户，口令自己设置，这里我设置为`scott`![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731095631.png)
-提示密码复杂性 直接忽略确定即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731100250.png)
-14. 然后继续确定可以看到安装完成了，关闭即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731100756.png)
-15. 测试安装是否成功，运行页面输入sqlplus,登录scott的账号密码查oracle自带的emp表看是否有结果，出现如下表示成功![](https://cdn.jsdelivr.net/gh/code-anan/image/20210731102741.png) 
+    + 找到SCOTT，设置不设定账户，口令自己设置，这里我设置为`scott`![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731095631.png)
+提示密码复杂性 直接忽略确定即可![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731100250.png)
+14. 然后继续确定可以看到安装完成了，关闭即可![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731100756.png)
+15. 测试安装是否成功，运行页面输入sqlplus,登录scott的账号密码查oracle自带的emp表看是否有结果，出现如下表示成功![](https://fastly.jsdelivr.net/gh/code-anan/image/20210731102741.png) 
 
 # 错过口令管理的解决方案
 1. win+R键 打开运行页面 并且输入`sqlplus`

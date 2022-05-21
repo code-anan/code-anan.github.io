@@ -7,7 +7,7 @@ tags:
 categories:
   - 数据库
 my: post/jdbc
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/20211207142826.png
+cover: https://fastly.jsdelivr.net/gh/code-anan/image/20211207142826.png
 ---
 # 前言
 `JDBC`其实已经很久没用到了，但是其原理还是有必要了解的，作为我们初期用java语言与数据库交互的工具，第一次见到它还是会觉得有些“神奇的”，但是今天闲来无事复习的时候发现了一个小问题，真是温故而知新。所以在这里记录一下以及如何使用它
@@ -17,7 +17,7 @@ cover: https://cdn.jsdelivr.net/gh/code-anan/image/20211207142826.png
 百度网盘链接：`https://pan.baidu.com/s/1GGuWeJDyyGUXSAZ_9jPuuA `
 提取码：`l9jb`
 * 下载之后就可以在java项目中引入刚才下载的jar包（`Project Structure`->`+`->`mysql-connector-java-5.1.46.jar`->`ok`）
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20211207134155.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20211207134155.png)
 
 # 使用JDBC
 jar包引入成功之后我们就可以使用了，它的使用总共可分为六步

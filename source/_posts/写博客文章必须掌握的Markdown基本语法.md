@@ -6,7 +6,7 @@ tags:
 category:
   - Hexo
   - 文章语法
-cover: 'https://cdn.jsdelivr.net/gh/code-anan/image/markdown.jpg'
+cover: 'https://fastly.jsdelivr.net/gh/code-anan/image/markdown.jpg'
 date: 2021-05-27 21:42:16
 my: post/markdown
 ---

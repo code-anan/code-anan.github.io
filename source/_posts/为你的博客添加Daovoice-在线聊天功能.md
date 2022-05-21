@@ -6,7 +6,7 @@ tags:
 categories:
   - Hexo
   - 修改记录
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/daovoice.jpg
+cover: https://fastly.jsdelivr.net/gh/code-anan/image/daovoice.jpg
 date: 2021-05-30 21:32:49
 my: post/daovoice
 ---

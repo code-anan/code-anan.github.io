@@ -3,7 +3,7 @@ author: lwl
 tags:
   - valine
   - LeanCloud
-cover: 'https://cdn.jsdelivr.net/gh/code-anan/image/leancloud.jpg'
+cover: 'https://fastly.jsdelivr.net/gh/code-anan/image/leancloud.jpg'
 my: post/valine
 categories:
   - Hexo
@@ -68,15 +68,15 @@ hexo s
 # 添加QQ邮箱提醒
 通过上面的步骤评论已经可以使用，但是为了能及时收到别人的评论，所以最好绑定自己的邮箱，这里我绑定的是`QQ`邮箱
 + 进入到咱们的`应用`->`云引擎`->`WEB`->`设置`->`添加新变量`，添加以下变量
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210618163012.png)
-注意设置QQ邮箱的话需要`SMTP_PASS`，它的获取需要到QQ邮箱中的`设置`->`账户`中，找到`SMTP`进行开启，这里需要发个短信![](https://cdn.jsdelivr.net/gh/code-anan/image/20210618163240.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20210618163012.png)
+注意设置QQ邮箱的话需要`SMTP_PASS`，它的获取需要到QQ邮箱中的`设置`->`账户`中，找到`SMTP`进行开启，这里需要发个短信![](https://fastly.jsdelivr.net/gh/code-anan/image/20210618163240.png)
 
-获取并填写完之后，就可以来到部署页了![](https://cdn.jsdelivr.net/gh/code-anan/image/20210618163355.png)
+获取并填写完之后，就可以来到部署页了![](https://fastly.jsdelivr.net/gh/code-anan/image/20210618163355.png)
 
 这里我们选择git部署，仓库选择跟我一样的就可以，然后点击部署
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210618163512.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20210618163512.png)
 > `https://github.com/lete114/Valine-Admin-Server.git`
 
 最后在`安全中心`->`设置`中添加上自己的域名就可以正常接收邮件提醒了
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210618164039.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20210618164039.png)
 大功告成(￣▽￣)~*

@@ -7,12 +7,12 @@ categories:
   - 上传
 my: post/savetoGithub
 cover: >-
-  https://cdn.jsdelivr.net/gh/code-anan/image/src=http---hbimg.b0.upaiyun.com-46ba6037c7a82a8f245cb3b77ae0bd487e9199da1bdf2-8ho4nc_fw658&refer=http---hbimg.b0.upaiyun.jpg
+  https://fastly.jsdelivr.net/gh/code-anan/image/src=http---hbimg.b0.upaiyun.com-46ba6037c7a82a8f245cb3b77ae0bd487e9199da1bdf2-8ho4nc_fw658&refer=http---hbimg.b0.upaiyun.jpg
 date: 2021-06-17 15:49:46
 ---
 
 # 前言
-众所周知，我们使用`hexo d`将项目部署到github上的时候，代码其实已经被重新渲染过了，都变成了`html`文件，如下所示，可以看到目录结构和我们在本地的项目已经完全不同，而且里面并没有我们所写的md文件![](https://cdn.jsdelivr.net/gh/code-anan/image/20210617155143.png)
+众所周知，我们使用`hexo d`将项目部署到github上的时候，代码其实已经被重新渲染过了，都变成了`html`文件，如下所示，可以看到目录结构和我们在本地的项目已经完全不同，而且里面并没有我们所写的md文件![](https://fastly.jsdelivr.net/gh/code-anan/image/20210617155143.png)
 再加上我曾经重装过一次系统，所以上次的网站已经找不回来了，现在看到的这个站其实是我的第二个网站了，但是吃一堑长一智，学会备份源码是一件很重要的事情，下面来看看怎么在github上备份本地代码吧！
 
 # 前提
@@ -20,17 +20,17 @@ date: 2021-06-17 15:49:46
 
 # 开始操作
 1. 创建一个仓库用来存放源码，这个没什么好说的，创建`public`不要勾选添加md文件，并且复制仓库的地址
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210617160804.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20210617160804.png)
 2. `cmd`进入到你的根目录下
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210617160723.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20210617160723.png)
 3. 这里我们全程使用的是git的常见指令
   + 首先输入`git init`(建仓)
   + 然后是`git add *`(添加代码到本地仓库)
   出现`warning`是正常的
-  ![](https://cdn.jsdelivr.net/gh/code-anan/image/20210617161144.png)
-  + 然后输入`git commit -m "first commit"`(提交到本地缓存，引号是提交信息)![](https://cdn.jsdelivr.net/gh/code-anan/image/20210617161352.png)
+  ![](https://fastly.jsdelivr.net/gh/code-anan/image/20210617161144.png)
+  + 然后输入`git commit -m "first commit"`(提交到本地缓存，引号是提交信息)![](https://fastly.jsdelivr.net/gh/code-anan/image/20210617161352.png)
   + （首次使用会提示：please tell me who you are）
-  ![](https://cdn.jsdelivr.net/gh/code-anan/image/20210617161501.png)
+  ![](https://fastly.jsdelivr.net/gh/code-anan/image/20210617161501.png)
   如果看到上面的提示，就在cmd里面继续敲这两行：（如果没有的话可以直接忽略）
 
 >git config --global user.email "xxx@xxx.com(你的github邮箱)"   
@@ -41,7 +41,7 @@ date: 2021-06-17 15:49:46
  + 最后一步是`git push -u origin master `(push到master分支)
  这一步由于github的连接情况很容易爆出各种错误，可以把它改成`git push -u origin master -f`强制上传，不过这样还是有可能上传失败，可以多试几次ヽ(￣▽￣)ﾉ
  # 大功告成
- ![](https://cdn.jsdelivr.net/gh/code-anan/image/20210617162145.png)
+ ![](https://fastly.jsdelivr.net/gh/code-anan/image/20210617162145.png)
  不用担心不小心丢失源码再也写不了博客了ヽ(￣▽￣)ﾉ
  # 补充
    +   git add -A  提交所有变化

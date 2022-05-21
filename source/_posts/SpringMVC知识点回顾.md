@@ -1,4 +1,4 @@
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---www.downkr.com-uploadfile-2021-0720-227530089.jpg&refer=http---www.downkr.jpg
+cover: https://fastly.jsdelivr.net/gh/code-anan/image/src=http---www.downkr.com-uploadfile-2021-0720-227530089.jpg&refer=http---www.downkr.jpg
 my: post/SpringMVCkeys
 title: SpringMVC知识点回顾
 categories:
@@ -20,7 +20,7 @@ SpringMVC能够创建对象放入到容器中，springMVC中存放的就是控�
 
 ## 新建一个项目
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20211230184240.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20211230184240.png)
 
 并创建需要的java、resources文件夹
 
@@ -156,9 +156,9 @@ modelAndView.setViewName表示指定识图的路径，执行forward操作，等�
 
 ## 测试结果
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220104182825.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20220104182825.png)
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220104182851.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20220104182851.png)
 
 这样一个最基本的springmvc的使用就完成了
 
@@ -166,7 +166,7 @@ modelAndView.setViewName表示指定识图的路径，执行forward操作，等�
 
 ## 视图解析器
 
-为了防止用户可以直接访问资源文件，我们可以把资源文件放到/WEB-INF下![](https://cdn.jsdelivr.net/gh/code-anan/image/20220105153417.png)
+为了防止用户可以直接访问资源文件，我们可以把资源文件放到/WEB-INF下![](https://fastly.jsdelivr.net/gh/code-anan/image/20220105153417.png)
 
 但是这样的问题是,我们在controller中指定资源文件的路径会变得麻烦，所以这里引入`视图解析器`的使用
 
@@ -220,7 +220,7 @@ modelAndView.setViewName("show");
     }
 ```
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220109120839.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20220109120839.png)
 
 如果使用以前的方式那么url的写法是http://localhost:8088/get/?name=zhangsan&&age=18,这种风格看起来更简洁有层次，同时也更加安全
 
@@ -326,7 +326,7 @@ public class User {
 
 ## 乱码问题
 
-当我们在jsp上发起post请求时，经常能看到乱码问题![](https://cdn.jsdelivr.net/gh/code-anan/image/20220109183239.png)
+当我们在jsp上发起post请求时，经常能看到乱码问题![](https://fastly.jsdelivr.net/gh/code-anan/image/20220109183239.png)
 
 这里我们可以选择在web.xml中注册声明过滤器
 
@@ -358,7 +358,7 @@ public class User {
     </filter-mapping>
 ```
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220109183908.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20220109183908.png)
 
 可以看到确实起作用了
 
@@ -485,7 +485,7 @@ produces属性是为了防止json串中乱码， @ResponseBody一般和@controll
  <mvc:annotation-driven/>
 ```
 
-那么会报500的错误![](https://cdn.jsdelivr.net/gh/code-anan/image/20220109201839.png)
+那么会报500的错误![](https://fastly.jsdelivr.net/gh/code-anan/image/20220109201839.png)
 
 加上之后，结果变成json形式
 
@@ -521,7 +521,7 @@ service、dao对象定义在spring的配置文件中，让spring管理这些对�
 
 ### 新建项目
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220110142643.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20220110142643.png)
 
 这里我们就用自带的webapp项目即可
 
@@ -656,7 +656,7 @@ service、dao对象定义在spring的配置文件中，让spring管理这些对�
 
 创建好需要的Controller、model、dao和service的包
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220110145840.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20220110145840.png)
 
 controller包下的StudentController:
 
@@ -854,7 +854,7 @@ jdbc.password=233
 
 ### 测试结果
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220110164117.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20220110164117.png)
 
 # 拦截器
 
@@ -955,7 +955,7 @@ public boolean preHandle(HttpServletRequest request, HttpServletResponse respons
    视图解析器作用：组成视图完整路径，使用前缀后缀并创建view对象，view是一个接口表示视图，在框架中jsp、html不是String表示，而是使用view和他的实现类表示视图
    InternalResourceView：视图类，表示jsp文件，视图解析器会创建InternalResourceView类对象，这个对象里面有一个属性url
 5. DispatcherServlet把创建的view对象获取到调用view类自己的方法，把model数据放入到request作用域，执行视图对象的forward，请求结束
-  流程图如下：![](https://cdn.jsdelivr.net/gh/code-anan/image/20220115124658.png)
+  流程图如下：![](https://fastly.jsdelivr.net/gh/code-anan/image/20220115124658.png)
 
 # 文件上传与下载
 
@@ -1087,7 +1087,7 @@ public class FileController {
     }
 ```
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220116201701.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20220116201701.png)
 
 好了，Springmvc差不多就这些结束(￣▽￣)~*
 

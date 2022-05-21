@@ -1,7 +1,7 @@
 title: Hexo博客中接入docsify文档管理系统
 author: lwl
 cover: >-
-  https://cdn.jsdelivr.net/gh/code-anan/image/src=http---cdn.dealmango.com-wp-content-uploads-2018-05-Docsify-appsumo-lifetime-deal.jpeg&refer=http---cdn.dealmango.jpg
+  https://fastly.jsdelivr.net/gh/code-anan/image/src=http---cdn.dealmango.com-wp-content-uploads-2018-05-Docsify-appsumo-lifetime-deal.jpeg&refer=http---cdn.dealmango.jpg
 tags:
   - Docsify
 categories:
@@ -23,10 +23,10 @@ date: 2021-12-12 16:50:26
 在github上新建一个仓库命名格式为`doc.域名`
    > 例如我的域名为 weilong98.com 所以我的仓库名称为doc.weilong98.com
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20211211195623.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20211211195623.png)
 
 ## 添加文件
-给新建的仓库添加一个文件 内容为从刚才的仓库名![](https://cdn.jsdelivr.net/gh/code-anan/image/20211211200200.png)
+给新建的仓库添加一个文件 内容为从刚才的仓库名![](https://fastly.jsdelivr.net/gh/code-anan/image/20211211200200.png)
 ## 初始化文档(cmd窗口中)
    > docsify init docs
    >
@@ -34,13 +34,13 @@ date: 2021-12-12 16:50:26
 
 出现succeeded即为初始化成功，初始化成功后会生成三个文件
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20211211201310.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20211211201310.png)
 
 本地预览
 
 > docsify serve docs
 
-与hexo类似 本地启动之后访问`http://localhost:3000`![](https://cdn.jsdelivr.net/gh/code-anan/image/20211211201503.png)
+与hexo类似 本地启动之后访问`http://localhost:3000`![](https://fastly.jsdelivr.net/gh/code-anan/image/20211211201503.png)
 
 启动成功 但是现在还没有内容
 
@@ -48,11 +48,11 @@ date: 2021-12-12 16:50:26
 
 - 设置封面
 
-打开刚才新生成文件的`index.html`，这里我们使用`sublime Text`打开 或者别的都可以![](https://cdn.jsdelivr.net/gh/code-anan/image/20211211201846.png)在图中所示位置添加`coverpage: true`
+打开刚才新生成文件的`index.html`，这里我们使用`sublime Text`打开 或者别的都可以![](https://fastly.jsdelivr.net/gh/code-anan/image/20211211201846.png)在图中所示位置添加`coverpage: true`
 
 新建一个`_coverpage.md`文件在`docs`文件夹下
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20211211202309.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20211211202309.png)
 
 然后在这里写我们封面的内容，下面为示例
 
@@ -70,7 +70,7 @@ date: 2021-12-12 16:50:26
 
 ```
 
-效果![](https://cdn.jsdelivr.net/gh/code-anan/image/20211212152705.png)
+效果![](https://fastly.jsdelivr.net/gh/code-anan/image/20211212152705.png)
 
 - 定制导航栏
 
@@ -98,31 +98,31 @@ date: 2021-12-12 16:50:26
 ## 拷贝文件
 然后把`docs`也就是刚才初始化的docsify项目中的所有文件copy到本地仓库`doc.weilong98.com`中
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20211212154220.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20211212154220.png)
 
 并把刚才的`docs`文件夹删除
 
 ## 上传仓库
 把项目上传到仓库（输入一些常用的命令即可）
 
-   ![](https://cdn.jsdelivr.net/gh/code-anan/image/20211212155022.png)
+   ![](https://fastly.jsdelivr.net/gh/code-anan/image/20211212155022.png)
 
 ## 解析配置
 然后还需要来到我们的域名控制台-解析设置中添加以下记录（记录值为我们hexo的域名）
 
-   ![](https://cdn.jsdelivr.net/gh/code-anan/image/20211212161259.png)
+   ![](https://fastly.jsdelivr.net/gh/code-anan/image/20211212161259.png)
 ## 分支保存
-来到仓库-settigns-pages选择我们的分支默认为main分支保存即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20211212160759.png)然后我们的Custom domain也自动输入上去了
+来到仓库-settigns-pages选择我们的分支默认为main分支保存即可![](https://fastly.jsdelivr.net/gh/code-anan/image/20211212160759.png)然后我们的Custom domain也自动输入上去了
 ## 仓库名访问
 然后可以直接访问我们的docsif文档了
 
-   ![](https://cdn.jsdelivr.net/gh/code-anan/image/20211212161442.png)
+   ![](https://fastly.jsdelivr.net/gh/code-anan/image/20211212161442.png)
 
 # hexo博客中引入doscify
 
  通过上面的步骤我们只需要在hexo中添加个导航栏 加上docsify的地址即可 打开`_config.butterfly.yml`文档找到导航区域
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20211212164050.png)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20211212164050.png)
 
 <br/>
 

@@ -6,19 +6,19 @@
 #   button: 手机端按钮内容
 
 # 例
-- cover: https://cdn.jsdelivr.net/gh/code-anan/image/hexo.jpg
+- cover: https://fastly.jsdelivr.net/gh/code-anan/image/hexo.jpg
   timeline: '2021-05-25'
   link: /post/hexo+github/
   title: Hexo+github搭建属于自己的私人博客网站
   description: 从0到1搭建个人博客
   button: 详情
-- cover: https://cdn.jsdelivr.net/gh/code-anan/image/markdown.jpg
+- cover: https://fastly.jsdelivr.net/gh/code-anan/image/markdown.jpg
   timeline: '2021-05-27'
   link: /post/markdown/
   title: 写博客文章必须掌握的Markdown基本语法
   description: markdown基本语法
   button: 详情
-- cover: https://cdn.jsdelivr.net/gh/code-anan/image/butterfly.jpg
+- cover: https://fastly.jsdelivr.net/gh/code-anan/image/butterfly.jpg
   timeline: '2021-05-28'
   link: /post/butterfly/
   title: 关于我的butterfly主题配置文件的一些修改

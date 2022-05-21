@@ -6,7 +6,7 @@ tags:
 categories:
   - Hexo
   - 修改记录
-cover: 'https://cdn.jsdelivr.net/gh/code-anan/image/butterfly.jpg'
+cover: 'https://fastly.jsdelivr.net/gh/code-anan/image/butterfly.jpg'
 my: post/butterfly
 date: 2021-05-28 15:39:32
 ---
@@ -30,7 +30,7 @@ hexo s
 ```powershell
 npm install hexo-renderer-pug hexo-renderer-stylus --save
 ```
-安装完成之后再次重复上面的那三个操作，然后出现下面这个图就表示主题配置成功了<img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg">
+安装完成之后再次重复上面的那三个操作，然后出现下面这个图就表示主题配置成功了<img src="https://fastly.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg">
 {% note info simple %}
 这里强烈建议把主题下面的配置文件放到根目录下面，即把/themes/butterfly下的`_config.yml`文件改名为`_config.butterfly.yml`.这样主要是为了防止升级以后主题配置文件会被更换，当然如果不升级的话可以忽略,并且当他和博客的主题配置文件都存在时，主题配置文件优先级会更高
 {% endnote %}
@@ -223,7 +223,7 @@ pjax:
 `主题配置文件`的修改：
 ```yaml
 # Favicon（網站圖標）
-favicon: https://cdn.jsdelivr.net/gh/code-anan/image/蜘蛛网万圣节.png
+favicon: https://fastly.jsdelivr.net/gh/code-anan/image/蜘蛛网万圣节.png
 ```
 ## 友链魔改
 这里我参考的花猪的文章:->[传送门](https://cnhuazhu.gitee.io/2021/02/25/Hexo%E9%AD%94%E6%94%B9/Hexo%E4%BF%AE%E6%94%B9%E5%8F%8B%E9%93%BE%E7%95%8C%E9%9D%A2/)

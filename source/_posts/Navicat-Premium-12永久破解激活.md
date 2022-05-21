@@ -6,7 +6,7 @@ tags:
 categories:
   - 数据库
   - 工具
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/navicat.png
+cover: https://fastly.jsdelivr.net/gh/code-anan/image/navicat.png
 my: post/navicat12
 ---
 # 前言

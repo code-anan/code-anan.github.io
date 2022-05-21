@@ -12,8 +12,8 @@ tags:
 
 # 方案一
 第一种方案是直接安装微软提供的启动盘->[下载地址](https://www.microsoft.com/zh-cn/software-download/windows10)
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210810212041.png)
-下载完双击进入，然后接受下一步选择`为另一台电脑创建安装介质`![](https://cdn.jsdelivr.net/gh/code-anan/image/20210810212600.png)继续下一步直到看到这里，首先我们选择U盘即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20210810212726.png)然后疯狂下一步即可，不过需要注意的是这个u盘首先是会清空所有的数据，如果有重要的文件需要提前备案，并且你如果想要放其他的文件，需要把启动盘这些零散的文件放在一个单独的文件夹下，这样一来非常麻烦，所以这里我们重点介绍第二种方案，附上视频版连接->[传送门](https://www.bilibili.com/medialist/play/ml123901424/BV1DJ411D79y)
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20210810212041.png)
+下载完双击进入，然后接受下一步选择`为另一台电脑创建安装介质`![](https://fastly.jsdelivr.net/gh/code-anan/image/20210810212600.png)继续下一步直到看到这里，首先我们选择U盘即可![](https://fastly.jsdelivr.net/gh/code-anan/image/20210810212726.png)然后疯狂下一步即可，不过需要注意的是这个u盘首先是会清空所有的数据，如果有重要的文件需要提前备案，并且你如果想要放其他的文件，需要把启动盘这些零散的文件放在一个单独的文件夹下，这样一来非常麻烦，所以这里我们重点介绍第二种方案，附上视频版连接->[传送门](https://www.bilibili.com/medialist/play/ml123901424/BV1DJ411D79y)
 
 # 方案二
 PE辅助启动有很多好处，那么首先是需要安装我们的PE工具，这里使用我下载好的百度链接即可：``

@@ -1,6 +1,6 @@
 title: Hexo+github搭建属于自己的私人博客网站
 author: lwl
-cover: 'https://cdn.jsdelivr.net/gh/code-anan/image/hexo.jpg'
+cover: 'https://fastly.jsdelivr.net/gh/code-anan/image/hexo.jpg'
 tags:
   - Hexo
   - Github
@@ -66,7 +66,7 @@ hexo clean
 hexo g
 hexo d
 ```
-在浏览器上输入{% label YourGithubName.github.io green  %}就可以看到你的博客了![](https://cdn.jsdelivr.net/gh/code-anan/image/20210625155527.png)
+在浏览器上输入{% label YourGithubName.github.io green  %}就可以看到你的博客了![](https://fastly.jsdelivr.net/gh/code-anan/image/20210625155527.png)
 10. 本文只介绍基本的安装和部署，另外关于文章的语法和其他的主题设置等会在其他文章中介绍，如果遇到了任何问题欢迎和我交流
 # 常见问题
 
