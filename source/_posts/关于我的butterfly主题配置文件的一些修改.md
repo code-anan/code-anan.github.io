@@ -36,7 +36,7 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 {% endnote %}
 # 修改记录
 当我们的主题更换好之后，除了写文章之外我们还会关心网站的样式，因为现在连导航栏都还没有，因此需要先了解hexo博客的一些必要概念：首先是首页菜单栏的添加，找到`主题配置文件`中最上方的`menu`属性，#在markdown文件中属于注释，把前面#删除进行修改：
-```
+```yaml
 Home: / || fas fa-home
 Archives: /archives/ || fas fa-archive
 Tags: /tags/ || fas fa-tags
@@ -93,7 +93,7 @@ highlight_height_limit: 200
 ```
 ## 社交图标
 这里我没有选择使用[Font Awesome](https://fontawesome.com/)的小图标，如果想要使用它里面的小图标，直接在`主题配置文件`找到social进行修改即可，但是它里面的小图标数量有限，所以我选择了阿里巴巴矢量库来引用小图标，效果展示：
-<img src="/img/posts/iconfont.png" width="250ox">
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522130558.png)
 修改方法为:->{% btn '/post/iconfont/',引用阿里巴巴矢量库iconfont修改社交图标,far fa-hand-point-right,outline %}
 ## 顶部图
 我的顶部图设置情况，依然是`主题配置文件`：
@@ -131,11 +131,11 @@ category_per_img:  'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 指路:->{% btn '/post/footer/',页脚设置游动的小鱼,far fa-hand-point-right,outline %}
 ## 评论
 评论区域的添加耽误了我不少的时间，一开始设置的时候出现了各种问题，后来多方百度搜索最终决定使用`valine`,效果如图：
-<img src="/img/posts/comment.png">
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522125925.png)
 修改方法：->{% btn '/post/valine/',添加valine评论,far fa-hand-point-right,outline %}
 ## 在线聊天
 我使用的是`daovoice`工具，也踩了不少坑，效果如图：
-<img src="/img/posts/daovoice.png" width="200px">
+![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522130150.png)
 修改方法：->{% btn '/post/daovoice/',添加在线聊天工具Daovoice,far fa-hand-point-right,outline %}
 ## 本地搜索
 1. 根目录下输入`npm install hexo-generator-search`下载需要的插件
@@ -144,7 +144,7 @@ category_per_img:  'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 local_search:
   enable: true
 ```
-这样就可以看到菜单栏多了一个搜索可以进行本地搜索：<img src="/img/posts/search.png">
+这样就可以看到菜单栏多了一个搜索可以进行本地搜索：![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522131033.png)
 ## 鼠标点击效果
 直接修改`主题配置文件`即可
 ```yaml
@@ -153,7 +153,7 @@ fireworks:
   zIndex: 9999 # -1 or 9999
   mobile: false
 ```
-效果：<img src="/img/posts/fire.gif">
+效果：![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522130420.gif)
 ## 标题前的小图标
 修改`主题配置文件`
 ```yaml
@@ -164,9 +164,9 @@ beautify:
   title-prefix-icon-color: "#F47466"
 ```
 `field`表示在全站（site）还是文章页（post）生效
-`title-prefix-icon`为你想要修改的图标样式，可以在[Font Awesome](https://fontawesome.com/)中找到喜欢的小图标,例如<img src="/img/posts/717.png">进行修改即可
+`title-prefix-icon`为你想要修改的图标样式，可以在[Font Awesome](https://fontawesome.com/)中找到喜欢的小图标,例如![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522125154.png)进行修改即可
 `title-prefix-icon-color`为小图标的样式
-效果：<img src="/img/posts/spider.png">
+效果：![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522131234.png)
 ## 网站副标题
 修改`主题配置文件`
 ```yaml
@@ -198,7 +198,7 @@ subtitle:
 {% note info simple %}
 会先显示`source`里的内容，然后再展示`sub`中自己编辑的内容
 {% endnote %}
-效果：<img src="/img/posts/subs.png">
+效果：![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522131259.png)
 ## snackbar弹窗
 修改`主题配置文件`
 ```yaml

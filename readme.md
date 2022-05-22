@@ -6,7 +6,7 @@ error: remote origin already exists.
 i 修改
 :wq 保存退出
 
-git branch -m master source
+git branch -m master/source(切换分支)
 
 Git报错解决：OpenSSL SSL_read: Connection was reset, errno 10054 错误解决
 git config --global http.sslVerify "false"
