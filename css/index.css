@@ -3887,6 +3887,9 @@ h1.page-title + .tag-cloud-list {
 #loading-box.loaded .spinner-box {
   display: none;
 }
+#loading-box.loaded .carplay {
+  display: none;
+}
 @-moz-keyframes configure-clockwise {
   0% {
     -webkit-transform: rotate(0);
