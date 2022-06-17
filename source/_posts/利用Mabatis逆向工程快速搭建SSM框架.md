@@ -7,20 +7,20 @@ tags:
 categories:
   - SpringBoot
 my: post/SSM build
-cover: https://fastly.jsdelivr.net/gh/code-anan/image/src=http---p7.zbjimg.com-task-2018-10-09-pub-5bbc781cb7f16.jpg&refer=http---p7.zbjimg.jpg
+cover: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---p7.zbjimg.com-task-2018-10-09-pub-5bbc781cb7f16.jpg&refer=http---p7.zbjimg.jpg
 ---
 # 准备工作
-为方便测试，在本地数据库准备好一张表![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622094047.png)
-以及一个`JDBC驱动jar包`![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622094222.png)
+为方便测试，在本地数据库准备好一张表![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622094047.png)
+以及一个`JDBC驱动jar包`![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622094222.png)
 
 # 正式开始
 上面两项工作做好之后，就可以正式开始了
 ## 逆向工程创建
-1. 创建一个简单的`springboot项目`![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622094417.png)
+1. 创建一个简单的`springboot项目`![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622094417.png)
 相关配置注意jdk设为8就行
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622094544.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622094544.png)
 注意勾选为`Spring Web`项目
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622094746.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622094746.png)
 
 2. 创建完之后，就是相关的配置
    + 添加`MySQL驱动依赖`和`Mybatis整合SpringBoot框架的起步依赖`
@@ -104,16 +104,16 @@ cover: https://fastly.jsdelivr.net/gh/code-anan/image/src=http---p7.zbjimg.com-t
             </plugin>
    ```
    添加完之后记得`reimport`不然读取不到pom中添加的依赖
-   ![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622101301.png)
-   刷新之后可以看到项目插件中多了`mybatis-generator`，双击就可以看到自动生成了实体类、Dao接口和映射文件![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622103548.png)
+   ![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622101301.png)
+   刷新之后可以看到项目插件中多了`mybatis-generator`，双击就可以看到自动生成了实体类、Dao接口和映射文件![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622103548.png)
    至此，逆向工程创建完成了~
 
 ## 控制层、业务层的创建
   逆向工程创建好，就等于持久层创建完了，现在只需要创建控制层和业务层即可
-  1. 控制层，这里创建一个`StudentController`![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622104530.png)
-  2. 业务层，需要创建控制层调用的接口和对应的实现类，并加上service注解![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622105047.png)
+  1. 控制层，这里创建一个`StudentController`![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622104530.png)
+  2. 业务层，需要创建控制层调用的接口和对应的实现类，并加上service注解![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622105047.png)
   3. Dao层的接口虽然逆向工程的时候自动为我们添加了方法，但在业务层调用的时候需要使用autowired注解从spring容器中获取，所以需要添加注解`Mapper`
-  ![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622105200.png)
+  ![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622105200.png)
 ## 核心配置文件的配置
 上面配置好之后，还需要在核心配置文件中(application.properties)添加必要的数据库配置
 ```
@@ -137,11 +137,11 @@ spring.datasource.password=233
         </resources>
  ```
  2. 将映射文件移动到resources资源文件夹,并在核心配置文件中声明位置
- ![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622110435.png)
+ ![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622110435.png)
  
  ## 成功测试
- 启动项目，在浏览器上测试![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622111136.png)
+ 启动项目，在浏览器上测试![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622111136.png)
  可以看到返回到了数据，大功告成~
 # 补充
-1. 上面在业务层使用Autowired注解调用Dao层，除了添加`mapper`注解之外，还可以在核心配置文件中添加`MapperSacn`注解，其值为dao接口所在包![](https://fastly.jsdelivr.net/gh/code-anan/image/20210622111624.png)
+1. 上面在业务层使用Autowired注解调用Dao层，除了添加`mapper`注解之外，还可以在核心配置文件中添加`MapperSacn`注解，其值为dao接口所在包![](https://cdn.jsdelivr.net/gh/code-anan/image/20210622111624.png)
 2. Mybatis逆向生成只针对单表，并且数据库中的字段由多个单词构成时必须用_分隔

@@ -6,7 +6,7 @@ tags:
 category:
   - Hexo
   - 文章语法
-cover: 'https://fastly.jsdelivr.net/gh/code-anan/image/markdown.jpg'
+cover: 'https://cdn.jsdelivr.net/gh/code-anan/image/markdown.jpg'
 date: 2021-05-27 21:42:16
 my: post/markdown
 ---
@@ -21,7 +21,7 @@ my: post/markdown
  看过有的帖子说最好加上密码保护，但是我觉得其实没有必要
 {% endnote %}
 安装好之后需要先启动`hexo s`然后在浏览器上输入http://localhost:4000/admin
-就可以进入到这个管理界面，这里不仅可以编辑文章，管理界面，还可以在这里发布到远端，设置图片路径等，当然主要是可以编辑博客文章方便而且右端会动态的生成，缺点就是这里编辑内容的一切外挂标签不能动态展示，但是他会自动保存，所以再打开一个链接随时进行刷新就可以![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522124957.png)
+就可以进入到这个管理界面，这里不仅可以编辑文章，管理界面，还可以在这里发布到远端，设置图片路径等，当然主要是可以编辑博客文章方便而且右端会动态的生成，缺点就是这里编辑内容的一切外挂标签不能动态展示，但是他会自动保存，所以再打开一个链接随时进行刷新就可以![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522124957.png)
 出现这个页面表示安装成功`1`可以新建文章 `2`可以开始编辑 感觉还是很方便的
 # 基础语法介绍
 > 知道了怎么新建文章之后 接下来就可以学习写文章了（当然不是教怎么写内容 内容要自己瞎编啦(*/ω＼*)）
@@ -39,7 +39,7 @@ hexo支持最多六级标题
  注意#后面一定要与内容保持缩进，否则不能生效，
 {% endnote %}
 效果：
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522125639.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522125639.png)
 
 ## 字体
 字体这一块我感觉常用的就是斜体和加粗 其他的了解一下即可
@@ -81,7 +81,7 @@ Do not just seek happiness for yourself. Seek happiness for all. Through kindnes
 -----
 **************
 ```
-效果：![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522130324.png)
+效果：![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522130324.png)
 这里是[butterfly](https://butterfly.js.org/)主题默认美化了 其他主题可能效果会不一样
 ## 图片
 图片在文章中的引用方式应该是最普遍的 然后这里介绍三种引入图片的方式
@@ -97,13 +97,13 @@ Do not just seek happiness for yourself. Seek happiness for all. Through kindnes
 ![头像](/img/avator.png "头像")
 ```
 效果：
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522131323.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522131323.png)
 2. 这种方式也是我喜欢用的方法<img>标签 回归html语法
 ```markdown
 <img src="/img/avator.png" width="200px" height="200px">
 ```
 效果：还可以随意调整图片的大小 很适用
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522124448.jpg)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522124448.jpg)
 3. hexo官方API提供的语法 感觉有点麻烦
 ```markdown
 {% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %}
@@ -214,7 +214,7 @@ ps:小括号是为了防止编译  实际用代码块的时候去掉即可
 {% blockquote  %}
 如果你的主题不是butterfly 建议不要使用 可能会出错，主题更换的方式可以参考别的文章（づ￣3￣）づ╭❤～以下内容来自[jerry](https://butterfly.js.org/posts/4aa8abbe/#Note-Bootstrap-Callout)
 {% endblockquote %}
-首先要修改`主题配置文件`即（/themes/butterfly目录下的_config.yml）这里建议把这个配置文件改名为`_config.butterfly.yml`并且放到博客的根目录下，如下图：![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522130009.png)
+首先要修改`主题配置文件`即（/themes/butterfly目录下的_config.yml）这里建议把这个配置文件改名为`_config.butterfly.yml`并且放到博客的根目录下，如下图：![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522130009.png)
 并且进行以下修改：
 ```yaml
 note:

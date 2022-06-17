@@ -1,6 +1,6 @@
 title: Spring知识点回顾
 author: lwl
-cover: https://fastly.jsdelivr.net/gh/code-anan/image/src=http---www.8090.com-uploads-allimg-210410-293530-210410140505B9.png&refer=http---www.8090.jpg
+cover: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---www.8090.com-uploads-allimg-210410-293530-210410140505B9.png&refer=http---www.8090.jpg
 
 my: post/SpringKeyPoints
 
@@ -36,7 +36,7 @@ DI（Dependency Injection）:依赖注入是IOC的技术实现，只需要在程
 
 ### 创建一个maven项目
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211223150019.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211223150019.png)
 
 ### 引入依赖
 
@@ -328,7 +328,7 @@ servlet、listener和filter等
 
 #### 类中加入spring的注解
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211224171126.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211224171126.png)
 
 @component:创建对象 等同于bean标签的作用
 
@@ -561,7 +561,7 @@ execution(* *..service.*.*(..))
 
 #### 新建maven项目
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211223150019.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211223150019.png)
 
 需要额外手动加入resources目录
 
@@ -666,7 +666,7 @@ public class Test {
 
 ```
 
-执行之，得到结果![](https://fastly.jsdelivr.net/gh/code-anan/image/20211227140418.png)
+执行之，得到结果![](https://cdn.jsdelivr.net/gh/code-anan/image/20211227140418.png)
 
 可以看到 目标方法执行之前执行了切面方法
 
@@ -716,7 +716,7 @@ public class Test {
 }
 ```
 
-得到结果为：![](https://fastly.jsdelivr.net/gh/code-anan/image/20211227142259.png)
+得到结果为：![](https://cdn.jsdelivr.net/gh/code-anan/image/20211227142259.png)
 
 通过此例 可以看出来JoinPoint在通知方法中可以获取方法执行时的一些信息，比如方法名称、方法的实参如果需要在通知方法中需要用到这些信息就可以选择加入JoinPoint，并且他必须是通知方法中的第一个参数
 
@@ -755,7 +755,7 @@ returning 自定义变量，表示目标方法的返回值
 
 执行say方法可以看到返回的结果如下：
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211227143432.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211227143432.png)
 
 #### 环绕通知
 
@@ -822,7 +822,7 @@ public class Test {
 }
 ```
 
-结果：![](https://fastly.jsdelivr.net/gh/code-anan/image/20211227151012.png)
+结果：![](https://cdn.jsdelivr.net/gh/code-anan/image/20211227151012.png)
 
 可以看到在环绕通知中其结果已经被修改了
 
@@ -931,7 +931,7 @@ IOC技术可以把对象都交给spring容器统一管理，所以spring可以�
 
 ## 新建maven项目
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211223150019.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211223150019.png)
 
 同样需要手动创建resources文件夹
 
@@ -1163,7 +1163,7 @@ public static void main(String[] args) {
     }
 ```
 
-测试类中 可以拿service对象也可以直接拿dao对象直接查询所得结果![](https://fastly.jsdelivr.net/gh/code-anan/image/20211228112256.png)
+测试类中 可以拿service对象也可以直接拿dao对象直接查询所得结果![](https://cdn.jsdelivr.net/gh/code-anan/image/20211228112256.png)
 
 ## 使用属性配置文件
 
@@ -1397,7 +1397,7 @@ web项目在Tomcat服务器上运行，tomcat一旦启动、项目一直运行�
 
 ##  创建web项目
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211230184240.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211230184240.png)
 
 创建一个webapp项目，需要手动添加java跟resources目录
 
@@ -1747,7 +1747,7 @@ jdbc.max=30
 
 ##  创建servlet
 
-这里还没到springmvc 所以先用servlet 小技巧 ![](https://fastly.jsdelivr.net/gh/code-anan/image/20211230192756.png)
+这里还没到springmvc 所以先用servlet 小技巧 ![](https://cdn.jsdelivr.net/gh/code-anan/image/20211230192756.png)
 
 这样新建可以直接在web.xml中 直接生成一个servlet并且还会自动继承`HttpServlet`,编写业务代码
 
@@ -1793,9 +1793,9 @@ jdbc.max=30
 
 ## 测试
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211230194608.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211230194608.png)
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211231190218.png)![](https://fastly.jsdelivr.net/gh/code-anan/image/20211231190253.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211231190218.png)![](https://cdn.jsdelivr.net/gh/code-anan/image/20211231190253.png)
 
 ## 配置监听器
 

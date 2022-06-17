@@ -23,24 +23,24 @@
       siteshot: https://cdn.docsmall.com/assets/img/33d17c9.png
     - name: 截屏工具
       link: https://app.prntscr.com/zh-cn/index.html
-      avatar: https://fastly.jsdelivr.net/gh/code-anan/image/lightshot-icon.webp
+      avatar: https://cdn.jsdelivr.net/gh/code-anan/image/lightshot-icon.webp
       descr: 超好用的截屏工具，没有之一！
-      siteshot: https://fastly.jsdelivr.net/gh/code-anan/image/lightshot-icon.webp
+      siteshot: https://cdn.jsdelivr.net/gh/code-anan/image/lightshot-icon.webp
     - name: 图书馆
       link: https://www.nowcoder.com/library
-      avatar: https://fastly.jsdelivr.net/gh/code-anan/image/u=3511027800,4244764456&fm=26&fmt=auto&gp=0.webp
+      avatar: https://cdn.jsdelivr.net/gh/code-anan/image/u=3511027800,4244764456&fm=26&fmt=auto&gp=0.webp
       descr: 有空的时间看一看
-      siteshot: https://fastly.jsdelivr.net/gh/code-anan/image/u=3511027800,4244764456&fm=26&fmt=auto&gp=0.webp
+      siteshot: https://cdn.jsdelivr.net/gh/code-anan/image/u=3511027800,4244764456&fm=26&fmt=auto&gp=0.webp
     - name: 在线画图工具
       link: https://processon.com
-      avatar: https://fastly.jsdelivr.net/gh/code-anan/image/20210813210412.webp
+      avatar: https://cdn.jsdelivr.net/gh/code-anan/image/20210813210412.webp
       descr: 好用的画图工具
-      siteshot: https://fastly.jsdelivr.net/gh/code-anan/image/20210813210412.webp
+      siteshot: https://cdn.jsdelivr.net/gh/code-anan/image/20210813210412.webp
     - name: 解压小网站
       link: https://aidn.jp/mikutap/
-      avatar: https://fastly.jsdelivr.net/gh/code-anan/image/src=http---c-ssl.duitang.com-uploads-item-201511-12-20151112165645_jPuFy.jpeg&refer=http---c-ssl.duitang.jpg
+      avatar: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---c-ssl.duitang.com-uploads-item-201511-12-20151112165645_jPuFy.jpeg&refer=http---c-ssl.duitang.jpg
       descr: 无聊的时候可以玩一玩
-      siteshot: https://fastly.jsdelivr.net/gh/code-anan/image/src=http---c-ssl.duitang.com-uploads-item-201511-12-20151112165645_jPuFy.jpeg&refer=http---c-ssl.duitang.jpg
+      siteshot: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---c-ssl.duitang.com-uploads-item-201511-12-20151112165645_jPuFy.jpeg&refer=http---c-ssl.duitang.jpg
     - name: 召唤神龙
       link: https://www.mutegame.com/170
       avatar: https://img1.baidu.com/it/u=420232681,398376754&fm=26&fmt=auto
@@ -51,26 +51,26 @@
   link_list:
     - name: 小嘉的部落格
       link: https://blog.imzjw.cn/posts/b74f504f/
-      avatar: https://fastly.jsdelivr.net/npm/nanshen/avatar.jpg
+      avatar: https://cdn.jsdelivr.net/npm/nanshen/avatar.jpg
       descr: butterfly主题优化的进阶版 很适用
       siteshot:
     - name: Akliar
       link: https://akilar.top/posts/7c16c4bb/
-      avatar: https://fastly.jsdelivr.net/gh/code-anan/image/akliar.png
+      avatar: https://cdn.jsdelivr.net/gh/code-anan/image/akliar.png
       descr: butterfly主题魔改大佬 有兴趣的可以看看
       siteshot:
     - name: 花猪
       link: https://cnhuazhu.top
-      avatar: https://fastly.jsdelivr.net/gh/CNhuazhu/Image/avatar.jpg
+      avatar: https://cdn.jsdelivr.net/gh/CNhuazhu/Image/avatar.jpg
       descr: 佛系青年
-      siteshot: https://fastly.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
+      siteshot: https://cdn.jsdelivr.net/gh/CNhuazhu/Image/top.jpg
     - name: iMaeGoo’s Blog
       link: https://www.imaegoo.com
       avatar: https://www.imaegoo.com/images/avatar.jpg
       descr: 虹墨空间站
     - name: PluShine
       link: https://plushine.cn/
-      avatar: https://fastly.jsdelivr.net/gh/xingjiahui/CDN@latest/touxiang.jpg
+      avatar: https://cdn.jsdelivr.net/gh/xingjiahui/CDN@latest/touxiang.jpg
       descr: 欢迎来到 XJHui's Blog！有疑问可以到 “留言板” 提问！^_^  
 - class_name: 好友
   class_desc: 

@@ -5,7 +5,7 @@ tags:
 categories:
   - 加密
 my: post/MD5bug
-cover: https://fastly.jsdelivr.net/gh/code-anan/image/src=http---qqpublic.qpic.cn-qq_public-0-0-3686373537-EA507FDE9F31C5CF532960603C844A0E-0-fmt=jpg&size=137&h=600&w=900&ppv=1.jpg&refer=http---qqpublic.qpic.jpg
+cover: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---qqpublic.qpic.cn-qq_public-0-0-3686373537-EA507FDE9F31C5CF532960603C844A0E-0-fmt=jpg&size=137&h=600&w=900&ppv=1.jpg&refer=http---qqpublic.qpic.jpg
 ---
 
 # 前言
@@ -30,11 +30,11 @@ cover: https://fastly.jsdelivr.net/gh/code-anan/image/src=http---qqpublic.qpic.c
     }
 ```
 
-这种方式应该是常见的写法了，可是问题是计算出md5转化为String类型的时候，如果md5的结果是0开头的，那么你会发现开头的0被抛弃了，那么校验的时候一定会报错，下面我用个例子演示，公司使用md5一般都是两次加密，比如我这里使用`300655`这个值进行加密，在线[加解密网站](https://www.cmd5.com/hash.aspx)上测试的结果如下![](https://fastly.jsdelivr.net/gh/code-anan/image/20220106143551.png)
+这种方式应该是常见的写法了，可是问题是计算出md5转化为String类型的时候，如果md5的结果是0开头的，那么你会发现开头的0被抛弃了，那么校验的时候一定会报错，下面我用个例子演示，公司使用md5一般都是两次加密，比如我这里使用`300655`这个值进行加密，在线[加解密网站](https://www.cmd5.com/hash.aspx)上测试的结果如下![](https://cdn.jsdelivr.net/gh/code-anan/image/20220106143551.png)
 
 这个表示加密两次的结果
 
-而用上面的代码测试出来的结果为![](https://fastly.jsdelivr.net/gh/code-anan/image/20220106143804.png)
+而用上面的代码测试出来的结果为![](https://cdn.jsdelivr.net/gh/code-anan/image/20220106143804.png)
 
 可以看到结果是不一样的
 
@@ -68,6 +68,6 @@ cover: https://fastly.jsdelivr.net/gh/code-anan/image/src=http---qqpublic.qpic.c
     }
 ```
 
-原理就是利用`formatter`将字节一个个的转为十六进制的形式即可，可以看到这次的结果为![](https://fastly.jsdelivr.net/gh/code-anan/image/20220106144148.png)
+原理就是利用`formatter`将字节一个个的转为十六进制的形式即可，可以看到这次的结果为![](https://cdn.jsdelivr.net/gh/code-anan/image/20220106144148.png)
 
 大功告成！(￣▽￣)~*

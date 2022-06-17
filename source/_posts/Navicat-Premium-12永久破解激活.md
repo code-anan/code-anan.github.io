@@ -6,7 +6,7 @@ tags:
 categories:
   - 数据库
   - 工具
-cover: https://fastly.jsdelivr.net/gh/code-anan/image/navicat.png
+cover: https://cdn.jsdelivr.net/gh/code-anan/image/navicat.png
 my: post/navicat12
 ---
 # 前言
@@ -23,7 +23,7 @@ PS：本文主要参考了[简书中的一篇文章](https://www.jianshu.com/p/8
 激活工具的下载地址咱们同样使用他的网盘地址就可以:->[传送](https://pan.baidu.com/s/1op3lpmD0ztIMGYgxH4qVSw)
 提取码：`ybvu`
 下完之后解压一下就可以，也没什么好说的，解压之后就可以先到破解工具目录下
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522130911.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522130911.png)
 # 正式开始
 ## 输入指令
 上面我们找到了激活工具解压之后的`Navicat Premium 12破解补丁`，在这个路径下打开`cmd`,当然你也可以使用`cd`指令跳转，都可以，然后在这个目录下输入我们的第一句需要的指令：
@@ -35,7 +35,7 @@ Patch.exe  "D:\软件\Navicat Premium 12\navicat.exe"
 Keygen.exe RegPrivateKey.pem
 ```
 然后它会让你输入用户名和组织名，这里随便写就可以，输入完用户名和组织名之后就会看到`SnKey`,这个待会会用到，如下图
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522125835.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522125835.png)
 {% note danger simple %}
 我这里截图第一条指令没出现`success`是因为我前面输过了，到这一步的时候不要关闭也不要退出
 {% endnote %}
@@ -43,10 +43,10 @@ Keygen.exe RegPrivateKey.pem
 到上面出现`SnKey`之后，现在要做的第一件事就是`断开网络连接!`，一定要断开网络连接，因为如果不断网后面不会出现手动激活
 ## 打开navicat.exe
 断网之后，现在可以打开我们的`navicat.exe`，如果之前下载没另外设置的话是会有桌面快捷方式的，打开之后，有的会直接出现注册页面，有的不会出现，如果不出现的话我们可以自己点开注册页面，上方工具栏`帮助`->`注册`：
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522131532.png)`键`中输入我们获取到的`SnKey`
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522131532.png)`键`中输入我们获取到的`SnKey`
 ## 手动激活
 输完键值，点击`激活`，可以看到手动激活（如果没有手动激活说明你没有断开网络连接），点击`手动激活`，可以看到`请求码`，复制下来到我们的dos窗口，回车两下可以获取到激活码(即下方的License)
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522131007.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522131007.png)
 复制到我们的激活码框中即可
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20220522130651.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522130651.png)
 大功告成~

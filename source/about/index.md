@@ -1,7 +1,7 @@
 ---
 title: 关于我
 date: 2021-05-23 16:17:23
-top_img: https://fastly.jsdelivr.net/gh/code-anan/image/about.jpg
+top_img: https://cdn.jsdelivr.net/gh/code-anan/image/about.jpg
 ---
 # 关于作者
 + 2021年本科毕业于[河南大学](http://www.henu.edu.cn/)

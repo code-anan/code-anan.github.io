@@ -1,6 +1,6 @@
 title: mybatis知识点回顾
 author: lwl
-cover: https://fastly.jsdelivr.net/gh/code-anan/image/20211224140144.png
+cover: https://cdn.jsdelivr.net/gh/code-anan/image/20211224140144.png
 categories:
   - mybatis
   - 记录
@@ -44,7 +44,7 @@ tags:
 
 ###  创建一个maven项目
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211223150019.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211223150019.png)
 
 PS：用这个模板需要手动添加resources资源目录(￣▽￣)~*
 
@@ -52,11 +52,11 @@ PS：用这个模板需要手动添加resources资源目录(￣▽￣)~*
 
 这里就叫Student吧 
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211223150138.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211223150138.png)
 
 ### 创建必要文件
 
-创建好需要的实体类(model下的Student)、接口（mapper下的StudentDao）、映射文件(mapper下的StudentDao.xml,也可以放到resources目录下)以及mybatis主配置文件`mybatis.xml`当然名字都随意![](https://fastly.jsdelivr.net/gh/code-anan/image/20211223150257.png)
+创建好需要的实体类(model下的Student)、接口（mapper下的StudentDao）、映射文件(mapper下的StudentDao.xml,也可以放到resources目录下)以及mybatis主配置文件`mybatis.xml`当然名字都随意![](https://cdn.jsdelivr.net/gh/code-anan/image/20211223150257.png)
 
 需要注意的一点：由于编译时候maven不能默认编译src下的xml文件 所以需要在pom.xml中build下添加如下才能编译xml文件
 
@@ -85,7 +85,7 @@ PS：用这个模板需要手动添加resources资源目录(￣▽￣)~*
 
 接口中添加一个查找所有学生的方法
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211223152454.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211223152454.png)
 
 ### 创建映射文件
 
@@ -174,7 +174,7 @@ public static void main(String[] args) throws IOException {
     }
 ```
 
-得到输出结果（注意Student类的toString方法需要重写）![](https://fastly.jsdelivr.net/gh/code-anan/image/20211223154957.png)
+得到输出结果（注意Student类的toString方法需要重写）![](https://cdn.jsdelivr.net/gh/code-anan/image/20211223154957.png)
 
 # 深入理解
 
@@ -509,7 +509,7 @@ jdbc.password=233
 PageHelper.startPage(pagenum,pagesize);
 ```
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20211224105820.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20211224105820.png)
 
 pagenum:第几页的数据 从1开始
 

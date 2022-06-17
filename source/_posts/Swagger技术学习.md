@@ -1,6 +1,6 @@
 title: Swagger技术学习
 author: lwl
-cover: https://fastly.jsdelivr.net/gh/code-anan/image/20220425182545.png
+cover: https://cdn.jsdelivr.net/gh/code-anan/image/20220425182545.png
 my: post/swagger	
 tags:
   - Swagger
@@ -61,7 +61,7 @@ public class SwaggerConfig {
 
 5. 测试运行：http://localhost:8999/swagger-ui.html
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20220421143722.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220421143722.png)
 
 需要注意的是springboot版本不能太高，我这里换成了2.4.0版本的springboot
 
@@ -77,7 +77,7 @@ swagger的ui页面我们也可以换用bottstrap的 更好看一点
 		</dependency>
 ```
 
-访问路径变成`/doc.html`![](https://fastly.jsdelivr.net/gh/code-anan/image/d08b5c578071398bb42d31ac31ab36d.png)
+访问路径变成`/doc.html`![](https://cdn.jsdelivr.net/gh/code-anan/image/d08b5c578071398bb42d31ac31ab36d.png)
 
 # 配置Swagger
 
@@ -108,7 +108,7 @@ public class SwaggerConfig {
 }
 ```
 
-在这里我们可以配置自己的一些信息![](https://fastly.jsdelivr.net/gh/code-anan/image/20220421151359.png)
+在这里我们可以配置自己的一些信息![](https://cdn.jsdelivr.net/gh/code-anan/image/20220421151359.png)
 
 #  Swagger配置扫描接口
 
@@ -204,7 +204,7 @@ public Docket docket(Environment environment){
     }
 ```
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20220421164953.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220421164953.png)
 
 ## 一些常用的注解
 
@@ -247,7 +247,7 @@ public class HelloController {
 
 效果：
 
-![](https://fastly.jsdelivr.net/gh/code-anan/image/20220421180514.png)
+![](https://cdn.jsdelivr.net/gh/code-anan/image/20220421180514.png)
 
 # 总结
 
