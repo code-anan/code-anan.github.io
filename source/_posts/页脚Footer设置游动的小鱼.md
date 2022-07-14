@@ -7,7 +7,7 @@ tags:
 categories:
   - Hexo
   - 修改记录
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/fish.png
+cover: https://gcore.jsdelivr.net/gh/code-anan/image/fish.png
 my: post/footer
 ---
 <meta name="referrer" content="no-referrer" />
@@ -30,7 +30,7 @@ style.
 {% note warning simple %}
 注意这里引入`fish.js`的路径是放在`/js`下，上面的代码最好直接复制不然容易出现有时候游动鱼儿效果失效的情况
 {% endnote %}
-2. 首先必须引入需要的`jquery`文件，网址为`https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js`，以及必要的鱼儿游动的js文件，网址为`https://cdn.jsdelivr.net/gh/xiabo2/CDN@latest/fish.js`
+2. 首先必须引入需要的`jquery`文件，网址为`https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js`，以及必要的鱼儿游动的js文件，网址为`https://gcore.jsdelivr.net/gh/xiabo2/CDN@latest/fish.js`
 {% note warning simple %}
 虽然说可以在`bottom`下直接引入就可以，但是这里建议在浏览器打开这个地址把这两个文件下载到本地`\themes\butterfly\source\js`下，这里我为了方便把他们改名为`jq.js`，`fish.js`放到这个目录下面
 {% endnote %}

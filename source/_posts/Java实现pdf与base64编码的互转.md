@@ -1,6 +1,6 @@
 title: Java实现pdf与base64编码的互转
 author: lwl
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---digittaly.com-wp-content-uploads-2020-06-digifeaturedimg-1.png&refer=http---digittaly.jpg
+cover: https://gcore.jsdelivr.net/gh/code-anan/image/src=http---digittaly.com-wp-content-uploads-2020-06-digifeaturedimg-1.png&refer=http---digittaly.jpg
 tags:
   - base64
   - pdf
@@ -129,10 +129,10 @@ public static void main(String[] args) {
 
 先指定一个PDF文件的路径然后将其转换成`base64`字符串，得到字符串之后调用`base64StringToPdf`方法传进去目标路径和base64编码即可得到生成的pdf文件
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20211211122515.png) 
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20211211122515.png) 
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20211211122607.png) 
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20211211122607.png) 
 
 运行完命令 即可看到生成的pdf文件 大功告成
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20211211122743.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20211211122743.png)

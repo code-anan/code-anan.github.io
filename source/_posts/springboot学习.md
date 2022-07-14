@@ -6,12 +6,12 @@ tags:
   - 框架
 categories:
   - SpringBoot
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/20220617204702.png
+cover: https://gcore.jsdelivr.net/gh/code-anan/image/20220617204702.png
 my: post/springbootkeys
 ---
 # Springboot启动图标
 
-这里分享SpringBoot启动图标修改方式![](https://cdn.jsdelivr.net/gh/code-anan/image/20220123180255.png)
+这里分享SpringBoot启动图标修改方式![](https://gcore.jsdelivr.net/gh/code-anan/image/20220123180255.png)
 
 其实也非常简单，首先创建一个SpringBoot项目(Spring Initializer)然后在`resources`目录下创建一个`banner.txt`文件即可，文件中的内容就可以自定义我们的展示内容，上图展示的效果可以在[这里](https://www.bootschool.net/ascii-art)进行搜索
 
@@ -136,9 +136,9 @@ public class Person {
 
 #多环境配置及配置文件位置
 
-springboot项目配置文件默认是放在`resources`目录下的，其实这个配置文件还可以下图所示的位置并且他们的优先级也跟数字标注的一样![](https://cdn.jsdelivr.net/gh/code-anan/image/20220124190130.png)
+springboot项目配置文件默认是放在`resources`目录下的，其实这个配置文件还可以下图所示的位置并且他们的优先级也跟数字标注的一样![](https://gcore.jsdelivr.net/gh/code-anan/image/20220124190130.png)
 
-企业开发我们经常会使用多种环境，这时候我们就可以创建多个`application.properties`文件，都必须以application开头中间用-  例如下面并且通过`spring.profiles.active=`指定使用哪一个配置文件![](https://cdn.jsdelivr.net/gh/code-anan/image/20220124190854.png)或者是使用`application.yaml`的这种方式
+企业开发我们经常会使用多种环境，这时候我们就可以创建多个`application.properties`文件，都必须以application开头中间用-  例如下面并且通过`spring.profiles.active=`指定使用哪一个配置文件![](https://gcore.jsdelivr.net/gh/code-anan/image/20220124190854.png)或者是使用`application.yaml`的这种方式
 
 ```yaml
 server:
@@ -232,9 +232,9 @@ spring:
 
 ## 国际化
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220223194220.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220223194220.png)
 
-找到`MessageSourceAutoConfiguration`类下的![](https://cdn.jsdelivr.net/gh/code-anan/image/20220223194410.png)
+找到`MessageSourceAutoConfiguration`类下的![](https://gcore.jsdelivr.net/gh/code-anan/image/20220223194410.png)
 
 我们就可以在配置文件(application.properties)中设置路径
 
@@ -243,9 +243,9 @@ spring:
 spring.messages.basename=i18n/login
 ```
 
-这样就可以在前段页面进行绑定，使用#![](https://cdn.jsdelivr.net/gh/code-anan/image/20220223195110.png)
+这样就可以在前段页面进行绑定，使用#![](https://gcore.jsdelivr.net/gh/code-anan/image/20220223195110.png)
 
-刷新页面可以看到发生了变化![](https://cdn.jsdelivr.net/gh/code-anan/image/20220223195315.png)
+刷新页面可以看到发生了变化![](https://gcore.jsdelivr.net/gh/code-anan/image/20220223195315.png)
 
 下面需要动态的改变他里面的值，首先需要定义一个类实现`LocaleResolver`类并且重写他的两个方法
 
@@ -298,9 +298,9 @@ public class MyMvcConfig implements WebMvcConfigurer {
 <a class="btn btn-sm" th:href="@{/index.html(language='en_US')}">English</a>
 ```
 
-效果![](https://cdn.jsdelivr.net/gh/code-anan/image/20220321202806.png)
+效果![](https://gcore.jsdelivr.net/gh/code-anan/image/20220321202806.png)
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220321202827.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220321202827.png)
 
 ## 登陆拦截器
 
@@ -415,7 +415,7 @@ public class JdbcController {
 
 ```
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220606200633.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220606200633.png)
 
 可以看到确实有效
 
@@ -511,7 +511,7 @@ public class DruidConfig {
 }
 ```
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220606211200.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220606211200.png)
 
 这样就可以看到druid自带的监控后台了
 
@@ -538,7 +538,7 @@ spring.datasource.url=jdbc:mysql://localhost:3306/test?serverTimeZone=UTClhost:3
 
 声明接口
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220607200300.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220607200300.png)
 
 使用@Mapper或者加上@Repository注解  或者在启动类中使用@MapperScan都可以
 
@@ -596,7 +596,7 @@ public class MyController {
 }
 ```
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220607203417.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220607203417.png)
 
 发现正常运行
 
@@ -689,11 +689,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 
-这里我们创建三个可以登录的用户保存在内存中并给他们赋予对应的权限以及每个角色可以访问的页面![](https://cdn.jsdelivr.net/gh/code-anan/image/20220608205833.png)这样一个简单的认证授权操作就完成了
+这里我们创建三个可以登录的用户保存在内存中并给他们赋予对应的权限以及每个角色可以访问的页面![](https://gcore.jsdelivr.net/gh/code-anan/image/20220608205833.png)这样一个简单的认证授权操作就完成了
 
 ### 注销和权限控制
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220608211115.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220608211115.png)
 
 在这里开启并且在页面上添加注销路由即可
 
@@ -783,7 +783,7 @@ pom中添加一下依赖
 
 然后我们就可以看到不同的账户显示不同的内容了
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220608214817.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220608214817.png)
 
 ### 记住我和首页定制
 
@@ -844,7 +844,7 @@ pom中添加一下依赖
     }
 ```
 
-需要注意的是loginPage指的是没有权限的时候我们访问有权限的页面会跳转的页面，后面的loginProcessingUrl表示使用security的登录功能（注意是功能不是页面）是用到的url，我们上面自己写的登录页的提交也是此地址，然后添加两个参数username和password以及下面 http.rememberMe().rememberMeParameter("remember");是security的登录功能添加记住我参数的设置![](https://cdn.jsdelivr.net/gh/code-anan/image/20220608222259.png)
+需要注意的是loginPage指的是没有权限的时候我们访问有权限的页面会跳转的页面，后面的loginProcessingUrl表示使用security的登录功能（注意是功能不是页面）是用到的url，我们上面自己写的登录页的提交也是此地址，然后添加两个参数username和password以及下面 http.rememberMe().rememberMeParameter("remember");是security的登录功能添加记住我参数的设置![](https://gcore.jsdelivr.net/gh/code-anan/image/20220608222259.png)
 
 到此 这个小demo的功能就算真正写完了；
 
@@ -852,7 +852,7 @@ pom中添加一下依赖
 
 ### 简单介绍
 
-[Shiro](https://shiro.apache.org/) Java 的一个`安全框架`， 可以帮助我们完成：认证、授权、加密、会话管理、与 Web 集成、缓存等；它相当简单，对比 Spring Security，可能没有 Spring Security 做的功能强大，但是在实际工作时可能并不需要那么复杂的东西，所以使用小而简单的 Shiro 就足够了；基本架构![](https://cdn.jsdelivr.net/gh/code-anan/image/20220609205044.png)
+[Shiro](https://shiro.apache.org/) Java 的一个`安全框架`， 可以帮助我们完成：认证、授权、加密、会话管理、与 Web 集成、缓存等；它相当简单，对比 Spring Security，可能没有 Spring Security 做的功能强大，但是在实际工作时可能并不需要那么复杂的东西，所以使用小而简单的 Shiro 就足够了；基本架构![](https://gcore.jsdelivr.net/gh/code-anan/image/20220609205044.png)
 
 **Subject**：主体，**代表了当前 “用户”**，这个用户不一定是一个具体的人，与当前应用交互的任何东西都是 Subject，如网络爬虫，机器人等；即一个抽象概念；所有 Subject 都绑定到 SecurityManager，与 Subject 的所有交互都会委托给 SecurityManager；可以把 Subject 认为是一个门面；SecurityManager 才是实际的执行者；
 
@@ -1184,7 +1184,7 @@ public class UserRelam extends AuthorizingRealm {
 
 ### Shiro请求授权
 
-首先给我们的用户添加一个权限的字段（实体类也要添加），如下![](https://cdn.jsdelivr.net/gh/code-anan/image/20220614214855.png)
+首先给我们的用户添加一个权限的字段（实体类也要添加），如下![](https://gcore.jsdelivr.net/gh/code-anan/image/20220614214855.png)
 
 shiro的配置类中设置权限
 
@@ -1252,7 +1252,7 @@ public class UserRelam extends AuthorizingRealm {
 
 需要注意的认证的代码 我们返回的SimpleAuthenticationInfo中给第一个属性Principal赋值了 这样我们才可以在上面拿到用户信息，然后给用户添加他们在数据库中有的权限、例如我们的root用户只有add权限
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220614215257.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220614215257.png)
 
 那么他就无法访问更新目录下的资源
 

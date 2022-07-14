@@ -2,7 +2,7 @@ title: 关于hexo部署到github上一直报错的原因（已更新）
 author: lwl
 tags:
   - 部署报错
-cover: 'https://cdn.jsdelivr.net/gh/code-anan/image/20210616135114.png'
+cover: 'https://gcore.jsdelivr.net/gh/code-anan/image/20210616135114.png'
 categories:
   - Hexo
   - 记录
@@ -24,11 +24,11 @@ xxxxxx  github.global.ssl.fastly.net
 ```
 把前面的`ip`换成你本机查到的才有效，这也是为什么直接复制出错的原因，对于这两个网址ip的查找方式有两种：
 1. 通过网址查找：->[传送](https://www.ipaddress.com/ip-lookup)
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210616133559.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20210616133559.png)
 依次输入`github.com`和`github.global.ssl.fastly.net `然后点击`Lookuo`即可查到相应的ip
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210616133755.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20210616133755.png)
 2. 第二种方式比较简单 直接打开cmd在任意目录下 通过`ping`命令即可获取到两个网址的ip
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210616133912.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20210616133912.png)
 # 补充
 如果以上步骤还是访问缓慢，可尝试`hosts`再在下面添加一些代码
 ```

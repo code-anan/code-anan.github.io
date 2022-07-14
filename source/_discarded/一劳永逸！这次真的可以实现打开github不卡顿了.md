@@ -3,7 +3,7 @@ author: lwl
 tags:
   - github加速
 cover: >-
-  https://cdn.jsdelivr.net/gh/code-anan/image/src=http---oss.heipg.cn-2020-03-1583939289-25b2916b5c49db6.jpg&refer=http---oss.heipg-1.jpg
+  https://gcore.jsdelivr.net/gh/code-anan/image/src=http---oss.heipg.cn-2020-03-1583939289-25b2916b5c49db6.jpg&refer=http---oss.heipg-1.jpg
 categories:
   - Github
 my: post/switchhosts
@@ -15,11 +15,11 @@ date: 2021-10-08 22:05:42
 
 # 解决方案
 1. 下载软件
-这里我们需要用到的软件是[Swithchhosts](https://github.com/oldj/SwitchHosts/releases)（点击即可进行跳转），下载步骤感觉就不用了多说了，选择适合你的版本进行下载即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20211008221533.png)
-2. 下载完之后安装到合适的目录然后打开样子如下图所示![](https://cdn.jsdelivr.net/gh/code-anan/image/20211008221810.png)
-3. 填写如下配置即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20211008221926.png)
-url:`https://cdn.jsdelivr.net/gh/isevenluo/github-hosts/hosts`
-4. 然后打开![](https://cdn.jsdelivr.net/gh/code-anan/image/20211008222042.png)
+这里我们需要用到的软件是[Swithchhosts](https://github.com/oldj/SwitchHosts/releases)（点击即可进行跳转），下载步骤感觉就不用了多说了，选择适合你的版本进行下载即可![](https://gcore.jsdelivr.net/gh/code-anan/image/20211008221533.png)
+2. 下载完之后安装到合适的目录然后打开样子如下图所示![](https://gcore.jsdelivr.net/gh/code-anan/image/20211008221810.png)
+3. 填写如下配置即可![](https://gcore.jsdelivr.net/gh/code-anan/image/20211008221926.png)
+url:`https://gcore.jsdelivr.net/gh/isevenluo/github-hosts/hosts`
+4. 然后打开![](https://gcore.jsdelivr.net/gh/code-anan/image/20211008222042.png)
 
 # 总结
 这个软件的本质是可以动态的帮我们改变hosts文件，虽然也是改hosts文件但是却不用我们手动写 只要打开软件即可 所以还是很方便的(￣▽￣)／

@@ -4,7 +4,7 @@ tags:
 categories:
   - PageHelper
   - 教程
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/src=http---img.yijingtu.com-oss-d-file-2021-08-13-3ec801a4b1ed902e88a4d348cb96b0d0.jpg&refer=http---img.yijingtu.jpg
+cover: https://gcore.jsdelivr.net/gh/code-anan/image/src=http---img.yijingtu.com-oss-d-file-2021-08-13-3ec801a4b1ed902e88a4d348cb96b0d0.jpg&refer=http---img.yijingtu.jpg
 my: post/PagehelperUse
 title: SpringBoot如何使用PageHelper
 date: 2021-12-24 13:00
@@ -105,7 +105,7 @@ size：每一页的数量
 
 ## 效果展示
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20211226192056.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20211226192056.png)
 
 # 总结
 

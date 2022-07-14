@@ -4,7 +4,7 @@ tags:
  - Git
 categories:
  - Git
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/20220302202339.png
+cover: https://gcore.jsdelivr.net/gh/code-anan/image/20220302202339.png
 my: post/git
 ---
 
@@ -68,7 +68,7 @@ Git GUI:图形页面的Git，不建议初学者使用
 
 查看配置`git config -l`
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220228111023.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220228111023.png)
 
 查看系统config `git config --system --l` 文件是`C:\Program Files\Git\etc`(安装位置)下的config文件
 
@@ -82,7 +82,7 @@ Git GUI:图形页面的Git，不建议初学者使用
 
 # Git工作原理
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220228113101.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220228113101.png)
 
 Working Directory:工作区，平时我们写代码存放的地方
 
@@ -150,33 +150,33 @@ doc/*.txt #忽略doc/notes.txt 单不包括doc/server/arch.txt
 ssh-keygen -t rsa
 ```
 
-可以看到生成了以下文件![](https://cdn.jsdelivr.net/gh/code-anan/image/20220302192259.png)
+可以看到生成了以下文件![](https://gcore.jsdelivr.net/gh/code-anan/image/20220302192259.png)
 
-后缀pub表示公钥 我们复制到我们的giteee上（设置-SSh公钥）即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20220302192520.png)
+后缀pub表示公钥 我们复制到我们的giteee上（设置-SSh公钥）即可![](https://gcore.jsdelivr.net/gh/code-anan/image/20220302192520.png)
 
 这里是默认的 也可以在生成密钥的时候输上咱们的账号密码 
 
 ## 创建仓库并拷贝到本地
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220302193239.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220302193239.png)
 
 随意创建一个仓库，然后拷贝到本地`git clone`命令
 
 ## IDEA集成git
 
-上面我们已经把新建的仓库拷贝到了本地，接下来我们要创建一个新的项目并把代码推送到仓库![](https://cdn.jsdelivr.net/gh/code-anan/image/20220302194714.png)
+上面我们已经把新建的仓库拷贝到了本地，接下来我们要创建一个新的项目并把代码推送到仓库![](https://gcore.jsdelivr.net/gh/code-anan/image/20220302194714.png)
 
-这里我们直接新创建一个springboot项目，新创建之后可以看到他右上角没有任何图标，然后到我们刚才克隆到的项目中![](https://cdn.jsdelivr.net/gh/code-anan/image/20220302194900.png)
+这里我们直接新创建一个springboot项目，新创建之后可以看到他右上角没有任何图标，然后到我们刚才克隆到的项目中![](https://gcore.jsdelivr.net/gh/code-anan/image/20220302194900.png)
 
-直接复制这些文件拷到我们创建的项目中，有重复的替换掉即可，这样就可以看到我们的项目右上角出现了git图标![](https://cdn.jsdelivr.net/gh/code-anan/image/20220302195044.png)
+直接复制这些文件拷到我们创建的项目中，有重复的替换掉即可，这样就可以看到我们的项目右上角出现了git图标![](https://gcore.jsdelivr.net/gh/code-anan/image/20220302195044.png)
 
-这表示我们的项目和仓库绑定到了一起，当然也可以在这里直接填上git路径![](https://cdn.jsdelivr.net/gh/code-anan/image/20220302195128.png)
+这表示我们的项目和仓库绑定到了一起，当然也可以在这里直接填上git路径![](https://gcore.jsdelivr.net/gh/code-anan/image/20220302195128.png)
 
 位置在上方工具栏`VCS`->`get from version Controll`，这两种方式都可以跟仓库绑定，代码的提交可以选择右上角的git小符号，也可以在下方的`Terminal`中输入git指令（下面还有个git push指令）
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220302195537.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220302195537.png)
 
-提交之后就可以在仓库中看到我们的代码了![](https://cdn.jsdelivr.net/gh/code-anan/image/20220302195615.png)
+提交之后就可以在仓库中看到我们的代码了![](https://gcore.jsdelivr.net/gh/code-anan/image/20220302195615.png)
 
 ## Git分支
 

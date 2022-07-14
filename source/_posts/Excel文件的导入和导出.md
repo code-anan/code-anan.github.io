@@ -1,6 +1,6 @@
 title: Excel文件的导入和导出
 author: lwl
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/20220222164321.png
+cover: https://gcore.jsdelivr.net/gh/code-anan/image/20220222164321.png
 tags:
   - Excel
   - Hutool
@@ -295,7 +295,7 @@ public class Student {
 
 ## 演示
 
-效果演示，这里我就使用第一种方式（当然结果都是一样的）![](https://cdn.jsdelivr.net/gh/code-anan/image/20220222144431.png)
+效果演示，这里我就使用第一种方式（当然结果都是一样的）![](https://gcore.jsdelivr.net/gh/code-anan/image/20220222144431.png)
 
 点击上传可以看到控制台输出了结果`[Student(name=皮卡丘, age=4, email=719603766@qq.com), Student(name=妙蛙种子, age=3, email=123445@qq.com)]`
 

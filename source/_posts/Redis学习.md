@@ -3,7 +3,7 @@ tags:
   - 数据库
 categories:
   - 教程
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/20220627220835.png
+cover: https://gcore.jsdelivr.net/gh/code-anan/image/20220627220835.png
 my: post/rediskeys
 title: Redis学习
 date: 2022-06-27 22:07
@@ -55,23 +55,23 @@ Redis推荐在linux服务器上搭建、windows版本的已经停止更新
 
 首先先进行[下载](https://github.com/MicrosoftArchive/redis/releases)
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220618160926.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220618160926.png)
 
 然后解压到本地即可
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220618161242.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220618161242.png)
 
 双击`redis-server.exe`即可本地启动，这表示启动了redis服务
 
 然后双击`redis-cli.exe`可以登录客户端（上面的服务不要关闭）
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220618161819.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220618161819.png)
 
 ping是测试有没有连接成功 下面就是对他的赋值取值简单操作
 
 ## Linux安装
 
-首先下载的话直接到[Redis中文网](https://www.redis.net.cn/)即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20220618162710.png)
+首先下载的话直接到[Redis中文网](https://www.redis.net.cn/)即可![](https://gcore.jsdelivr.net/gh/code-anan/image/20220618162710.png)
 
 安装的话 直接看pdf文档即可https://www.aliyundrive.com/s/tX5SmNKbAwP 有非常详细的步骤
 
@@ -87,7 +87,7 @@ redis安装目录utils目录下`sh install_server.sh`进行启动或者`redsi-se
 
 ## redis-benchmark
 
-redis自带的测试工具，目录在`usr/local/bin`  ，可以自定义参数 了解一下即可![image-20220619112228814](https://cdn.jsdelivr.net/gh/code-anan/image/20220619112235.png)
+redis自带的测试工具，目录在`usr/local/bin`  ，可以自定义参数 了解一下即可![image-20220619112228814](https://gcore.jsdelivr.net/gh/code-anan/image/20220619112235.png)
 
 ## 基础知识
 
@@ -945,7 +945,7 @@ OK
         </dependency>
 ```
 
-然后把本地的redis打开![image-20220705204443601](https://cdn.jsdelivr.net/gh/code-anan/image/20220705204450.png)
+然后把本地的redis打开![image-20220705204443601](https://gcore.jsdelivr.net/gh/code-anan/image/20220705204450.png)
 
 基本的使用
 
@@ -1015,13 +1015,13 @@ spring.redis.port=6379
     }
 ```
 
-![image-20220705214040298](https://cdn.jsdelivr.net/gh/code-anan/image/20220705214040.png)
+![image-20220705214040298](https://gcore.jsdelivr.net/gh/code-anan/image/20220705214040.png)
 
 opsfor可以获取不同的类型进行操作，然而在实际开发中我们不会使用自带的RedisTemplate,所以我们需要自己定义一个Template来使用
 
 ## 自定义RedisTemplate
 
-首先，redis存放的对象必须要是经过序列化的 不序列话的话会直接报错![image-20220706205728339](https://cdn.jsdelivr.net/gh/code-anan/image/20220706205735.png)
+首先，redis存放的对象必须要是经过序列化的 不序列话的话会直接报错![image-20220706205728339](https://gcore.jsdelivr.net/gh/code-anan/image/20220706205735.png)
 
 实现`Serializable`接口之后就会发现不报错了 但是他默认的jdk序列化 我们想要自定义的序列化方式 就需要自定义我们的template，下面是一个最常见的模板可以涵盖大部分应用场景
 
@@ -1394,7 +1394,7 @@ public class RedisUtils {
 
 
 
-![image-20220708204201970](https://cdn.jsdelivr.net/gh/code-anan/image/20220708204209.png)
+![image-20220708204201970](https://gcore.jsdelivr.net/gh/code-anan/image/20220708204209.png)
 
 默认的127.0.0.1  如果想让任何机器访问设置`0.0.0.0`即可
 
@@ -1543,7 +1543,7 @@ Aof运行效率也比rdb慢 所以redis默认持久化选的是rdb
 
 Redis发布订阅(pub/sub)是一种消息通信模式：发送者（pub）发送消息、订阅者（sub）接收消息；Redis客户端可以订阅任意数量的频道
 
-![image-20220710190405205](https://cdn.jsdelivr.net/gh/code-anan/image/20220710190412.png)
+![image-20220710190405205](https://gcore.jsdelivr.net/gh/code-anan/image/20220710190412.png)
 
 > 测试
 
@@ -1619,7 +1619,7 @@ root@localhost lwlredisconfig]# cp redis.conf redis79.conf
 
 4.dump.rdb名字 启动之后效果如下
 
-![image-20220710203101046](https://cdn.jsdelivr.net/gh/code-anan/image/20220710203101.png)
+![image-20220710203101046](https://gcore.jsdelivr.net/gh/code-anan/image/20220710203101.png)
 
 这样就成功的模拟了一个小集群
 
@@ -1699,7 +1699,7 @@ repl_backlog_histlen:308
 
 真实的主配置应该在配置文件中修改，那样的话是永久的 使用上面的命令 只是暂时的；主机只能写 从机只能读
 
-![image-20220711201849638](https://cdn.jsdelivr.net/gh/code-anan/image/20220711201856.png)
+![image-20220711201849638](https://gcore.jsdelivr.net/gh/code-anan/image/20220711201856.png)
 
 ```bash
 127.0.0.1:6380> get k1

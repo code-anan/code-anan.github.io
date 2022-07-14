@@ -1,6 +1,6 @@
 title: CentOS系统在虚拟机上的安装
 author: lwl
-cover: https://cdn.jsdelivr.net/gh/code-anan/image/20220331190341.png
+cover: https://gcore.jsdelivr.net/gh/code-anan/image/20220331190341.png
 tags:
   - 虚拟机
   - Vmware
@@ -18,9 +18,9 @@ my: post/CentOSInstall
 
 首先是官网的下载地址：->[传送门](https://www.vmware.com/go/getworkstation-win)，这里我们下载的是16版本的，下载完成之后双击运行即可（这里可能会需要重启一下电脑）前面一直下一步即可
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331133612.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331133612.png)
 
-这里我们最好更改一下安装路径 默认安装在C盘，然后下一步一直到输入许可证的地方![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331133952.png)
+这里我们最好更改一下安装路径 默认安装在C盘，然后下一步一直到输入许可证的地方![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331133952.png)
 
 输入许可证，这里感谢[小翁同学]([还在用旧版本VMWare？不如安装最新的16.0！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1eo4y1o77M?spm_id_from=333.337.search-card.all.click))提供的三个可使用密钥
 
@@ -43,29 +43,29 @@ my: post/CentOSInstall
 
 vmware安装好之后，我们就可以在上面创建我们的Linux或者其他的系统了
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331134430.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331134430.png)
 
-然后选择自定义![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331134527.png)
+然后选择自定义![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331134527.png)
 
-硬盘兼容性选择16.x就行![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331134644.png)
+硬盘兼容性选择16.x就行![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331134644.png)
 
 然后选择我们事先准备好的光驱，光驱可以在MSDN的[新官网]([原版软件 (itellyou.cn)](https://next.itellyou.cn/Original/#cbp=Product?ID=dfb4715d-5e52-ea11-bd34-b025aa28351d))下载
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331134747.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331134747.png)
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331135009.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331135009.png)
 
-复制到迅雷下载即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331135056.png)
+复制到迅雷下载即可![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331135056.png)
 
-继续下一步，设置好账号密码![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331135143.png)
+继续下一步，设置好账号密码![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331135143.png)
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331135312.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331135312.png)
 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331135512.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331135512.png)
 
-这里处理器数量根据你电脑的情况选择![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331135557.png)
+这里处理器数量根据你电脑的情况选择![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331135557.png)
 
-这里也是一样 如果你电脑内存只有8g还是选择1g即可![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331135700.png)
+这里也是一样 如果你电脑内存只有8g还是选择1g即可![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331135700.png)
 
 这里说一下网络类型，根据你的需求进行选择：
 
@@ -79,6 +79,6 @@ vmware安装好之后，我们就可以在上面创建我们的Linux或者其他
 
 上面创建完毕之后，确保宿主机跟我们的虚拟机都可以互相ping通，如果遇到其他问题可以看羊哥的这篇[人手一套Linux环境之：Windows版本教程 (qq.com)](https://mp.weixin.qq.com/s/onVwwEQ1DAwbvK7qS2YNxg))
 
-首先在虚拟机上使用`ifconfig`指令查看分配的ip地址![](https://cdn.jsdelivr.net/gh/code-anan/image/20220331162347.png)
+首先在虚拟机上使用`ifconfig`指令查看分配的ip地址![](https://gcore.jsdelivr.net/gh/code-anan/image/20220331162347.png)
 
 在SSH工具上即可进行连接 账号密码即我们创建虚拟机的账号密码 这样我们就可以实现文件互传啦 虚拟机创建完成还有一些开发需要必要的配置后面再说(￣▽￣)~*

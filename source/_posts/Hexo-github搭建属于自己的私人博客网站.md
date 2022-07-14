@@ -1,6 +1,6 @@
 title: Hexo+github搭建属于自己的私人博客网站
 author: lwl
-cover: 'https://cdn.jsdelivr.net/gh/code-anan/image/hexo.jpg'
+cover: 'https://gcore.jsdelivr.net/gh/code-anan/image/hexo.jpg'
 tags:
   - Hexo
   - Github
@@ -22,8 +22,8 @@ date: 2021-05-25 20:20:17
 
 1. 如果要部署到github上，那么需要先注册一个[github账号](https://github.com/login)
 2. 登录以后，创建一个新仓库：
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522124619.jpg) 
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522124553.jpg)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522124619.jpg) 
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522124553.jpg)
     {% note danger simple %}
     注意：仓库名称必须为 {% label 用户名  green%}.github.io
     {% endnote %}
@@ -49,7 +49,7 @@ hexo -v
 hexo init blog
 ```
 这里blog也可以改成你想要的名字，博客的配置文件等都会放在它的子目录下
-7. 创建好blog文件夹之后 需要进入到blog目录下`cd blog`然后输入`hexo s`,在浏览器上输入{% label localhost:4000  %}就可以查看本地博客了![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522124802.jpg)
+7. 创建好blog文件夹之后 需要进入到blog目录下`cd blog`然后输入`hexo s`,在浏览器上输入{% label localhost:4000  %}就可以查看本地博客了![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522124802.jpg)
 8. 下面开始部署到github上，这样别人也可以访问我们的博客了：
     + 首先配置blog目录下的{% label _config.yml  %}文件，打开找到下面的代码修改为：
     ```yaml
@@ -62,14 +62,14 @@ hexo init blog
      上面代码中的{% label YourGithubName green  %}改成你自己的{% label YourGithubName green  %}，不要全部复制
     {% endnote %}
     
-    + 本地部署之后，下面就要正式开始部署到github上了，这里需要用到一个工具[git](https://git-scm.com/downloads),没下载的可以下载一下也很简单，下载安装之后会发现鼠标右键会多出来两项![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522124839.jpg)然后还需要安装一个非常重要的插件，在blog目录下输入`cnpm install --save hexo-deployer-git`,把项目部署到github上需要用到。
+    + 本地部署之后，下面就要正式开始部署到github上了，这里需要用到一个工具[git](https://git-scm.com/downloads),没下载的可以下载一下也很简单，下载安装之后会发现鼠标右键会多出来两项![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522124839.jpg)然后还需要安装一个非常重要的插件，在blog目录下输入`cnpm install --save hexo-deployer-git`,把项目部署到github上需要用到。
 9. 最后三步就完成了部署
 ```bash
 hexo clean
 hexo g
 hexo d
 ```
-在浏览器上输入{% label YourGithubName.github.io green  %}就可以看到你的博客了![](https://cdn.jsdelivr.net/gh/code-anan/image/20210625155527.png)
+在浏览器上输入{% label YourGithubName.github.io green  %}就可以看到你的博客了![](https://gcore.jsdelivr.net/gh/code-anan/image/20210625155527.png)
 10. 本文只介绍基本的安装和部署，另外关于文章的语法和其他的主题设置等会在其他文章中介绍，如果遇到了任何问题欢迎和我交流
 # 常见问题
 

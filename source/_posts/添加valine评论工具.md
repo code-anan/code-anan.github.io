@@ -3,7 +3,7 @@ author: lwl
 tags:
   - valine
   - LeanCloud
-cover: 'https://cdn.jsdelivr.net/gh/code-anan/image/leancloud.jpg'
+cover: 'https://gcore.jsdelivr.net/gh/code-anan/image/leancloud.jpg'
 my: post/valine
 categories:
   - Hexo
@@ -18,10 +18,10 @@ date: 2021-05-29 15:28:15
 # 操作步骤
 ## 注册LeanCloud
 建议注册[LeanCloud国际版](https://console.leancloud.app/register),以后添加说说功能用国际版的会比较方便，注册完之后创建个应用选择开发版，名字无所谓
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522130715.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522130715.png)
 ## 找到AppID和AppKey
 进入应用->设置->应用Keys，可以看到`ID`和`Key`,这个是后面需要用到的
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522130629.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522130629.png)
 ## 修改主题配置文件
 1. `comments`下的`use`，一定要把前面的#注释打开，不然修改不成功
 ```yaml
@@ -60,7 +60,7 @@ hexo g
 hexo s
 ```
 效果图：
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522125925.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522125925.png)
 {% note info simple %}
 如果你不想随时接收到评论信息，到这里就完成了，在[应用](https://console.leancloud.app/apps/rW4vvYAhgn12o4M7UaOgUQAX-MdYXbMMI/)中的`结构化数据`就可以查看评论
 {% endnote %}
@@ -68,15 +68,15 @@ hexo s
 # 添加QQ邮箱提醒
 通过上面的步骤评论已经可以使用，但是为了能及时收到别人的评论，所以最好绑定自己的邮箱，这里我绑定的是`QQ`邮箱
 + 进入到咱们的`应用`->`云引擎`->`WEB`->`设置`->`添加新变量`，添加以下变量
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210618163012.png)
-注意设置QQ邮箱的话需要`SMTP_PASS`，它的获取需要到QQ邮箱中的`设置`->`账户`中，找到`SMTP`进行开启，这里需要发个短信![](https://cdn.jsdelivr.net/gh/code-anan/image/20210618163240.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20210618163012.png)
+注意设置QQ邮箱的话需要`SMTP_PASS`，它的获取需要到QQ邮箱中的`设置`->`账户`中，找到`SMTP`进行开启，这里需要发个短信![](https://gcore.jsdelivr.net/gh/code-anan/image/20210618163240.png)
 
-获取并填写完之后，就可以来到部署页了![](https://cdn.jsdelivr.net/gh/code-anan/image/20210618163355.png)
+获取并填写完之后，就可以来到部署页了![](https://gcore.jsdelivr.net/gh/code-anan/image/20210618163355.png)
 
 这里我们选择git部署，仓库选择跟我一样的就可以，然后点击部署
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210618163512.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20210618163512.png)
 > `https://github.com/lete114/Valine-Admin-Server.git`
 
 最后在`安全中心`->`设置`中添加上自己的域名就可以正常接收邮件提醒了
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20210618164039.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20210618164039.png)
 大功告成(￣▽￣)~*

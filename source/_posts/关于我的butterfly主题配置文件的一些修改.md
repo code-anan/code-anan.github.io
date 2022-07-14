@@ -6,7 +6,7 @@ tags:
 categories:
   - Hexo
   - 修改记录
-cover: 'https://cdn.jsdelivr.net/gh/code-anan/image/butterfly.jpg'
+cover: 'https://gcore.jsdelivr.net/gh/code-anan/image/butterfly.jpg'
 my: post/butterfly
 date: 2021-05-28 15:39:32
 ---
@@ -30,7 +30,7 @@ hexo s
 ```powershell
 npm install hexo-renderer-pug hexo-renderer-stylus --save
 ```
-安装完成之后再次重复上面的那三个操作，然后出现下面这个图就表示主题配置成功了<img src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg">
+安装完成之后再次重复上面的那三个操作，然后出现下面这个图就表示主题配置成功了<img src="https://gcore.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/top_img/index.jpg">
 {% note info simple %}
 这里强烈建议把主题下面的配置文件放到根目录下面，即把/themes/butterfly下的`_config.yml`文件改名为`_config.butterfly.yml`.这样主要是为了防止升级以后主题配置文件会被更换，当然如果不升级的话可以忽略,并且当他和博客的主题配置文件都存在时，主题配置文件优先级会更高
 {% endnote %}
@@ -93,7 +93,7 @@ highlight_height_limit: 200
 ```
 ## 社交图标
 这里我没有选择使用[Font Awesome](https://fontawesome.com/)的小图标，如果想要使用它里面的小图标，直接在`主题配置文件`找到social进行修改即可，但是它里面的小图标数量有限，所以我选择了阿里巴巴矢量库来引用小图标，效果展示：
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522130558.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522130558.png)
 修改方法为:->{% btn '/post/iconfont/',引用阿里巴巴矢量库iconfont修改社交图标,far fa-hand-point-right,outline %}
 ## 顶部图
 我的顶部图设置情况，依然是`主题配置文件`：
@@ -131,11 +131,11 @@ category_per_img:  'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 指路:->{% btn '/post/footer/',页脚设置游动的小鱼,far fa-hand-point-right,outline %}
 ## 评论
 评论区域的添加耽误了我不少的时间，一开始设置的时候出现了各种问题，后来多方百度搜索最终决定使用`valine`,效果如图：
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522125925.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522125925.png)
 修改方法：->{% btn '/post/valine/',添加valine评论,far fa-hand-point-right,outline %}
 ## 在线聊天
 我使用的是`daovoice`工具，也踩了不少坑，效果如图：
-![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522130150.png)
+![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522130150.png)
 修改方法：->{% btn '/post/daovoice/',添加在线聊天工具Daovoice,far fa-hand-point-right,outline %}
 ## 本地搜索
 1. 根目录下输入`npm install hexo-generator-search`下载需要的插件
@@ -144,7 +144,7 @@ category_per_img:  'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
 local_search:
   enable: true
 ```
-这样就可以看到菜单栏多了一个搜索可以进行本地搜索：![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522131033.png)
+这样就可以看到菜单栏多了一个搜索可以进行本地搜索：![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522131033.png)
 ## 鼠标点击效果
 直接修改`主题配置文件`即可
 ```yaml
@@ -153,7 +153,7 @@ fireworks:
   zIndex: 9999 # -1 or 9999
   mobile: false
 ```
-效果：![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522130420.gif)
+效果：![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522130420.gif)
 ## 标题前的小图标
 修改`主题配置文件`
 ```yaml
@@ -164,9 +164,9 @@ beautify:
   title-prefix-icon-color: "#F47466"
 ```
 `field`表示在全站（site）还是文章页（post）生效
-`title-prefix-icon`为你想要修改的图标样式，可以在[Font Awesome](https://fontawesome.com/)中找到喜欢的小图标,例如![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522125154.png)进行修改即可
+`title-prefix-icon`为你想要修改的图标样式，可以在[Font Awesome](https://fontawesome.com/)中找到喜欢的小图标,例如![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522125154.png)进行修改即可
 `title-prefix-icon-color`为小图标的样式
-效果：![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522131234.png)
+效果：![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522131234.png)
 ## 网站副标题
 修改`主题配置文件`
 ```yaml
@@ -198,7 +198,7 @@ subtitle:
 {% note info simple %}
 会先显示`source`里的内容，然后再展示`sub`中自己编辑的内容
 {% endnote %}
-效果：![](https://cdn.jsdelivr.net/gh/code-anan/image/20220522131259.png)
+效果：![](https://gcore.jsdelivr.net/gh/code-anan/image/20220522131259.png)
 ## snackbar弹窗
 修改`主题配置文件`
 ```yaml
@@ -223,7 +223,7 @@ pjax:
 `主题配置文件`的修改：
 ```yaml
 # Favicon（網站圖標）
-favicon: https://cdn.jsdelivr.net/gh/code-anan/image/蜘蛛网万圣节.png
+favicon: https://gcore.jsdelivr.net/gh/code-anan/image/蜘蛛网万圣节.png
 ```
 ## 友链魔改
 这里我参考的花猪的文章:->[传送门](https://cnhuazhu.gitee.io/2021/02/25/Hexo%E9%AD%94%E6%94%B9/Hexo%E4%BF%AE%E6%94%B9%E5%8F%8B%E9%93%BE%E7%95%8C%E9%9D%A2/)
