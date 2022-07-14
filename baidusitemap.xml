@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.weilong98.com/post/git/</loc>
+    <loc>http://www.weilong98.com/post/springbootkeys/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
     <loc>http://www.weilong98.com/post/CentOSInstall/</loc>
+    <lastmod>2022-07-14</lastmod>
+  </url>
+  <url>
+    <loc>http://www.weilong98.com/post/git/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
@@ -17,15 +21,11 @@
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
-    <loc>http://www.weilong98.com/post/springbootkeys/</loc>
+    <loc>http://www.weilong98.com/post/oracleinstall/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
     <loc>http://www.weilong98.com/post/PLSQL%20Developer/</loc>
-    <lastmod>2022-07-14</lastmod>
-  </url>
-  <url>
-    <loc>http://www.weilong98.com/post/oracleinstall/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
@@ -49,11 +49,11 @@
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
-    <loc>http://www.weilong98.com/post/footer/</loc>
+    <loc>http://www.weilong98.com/post/jdbc/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
-    <loc>http://www.weilong98.com/post/jdbc/</loc>
+    <loc>http://www.weilong98.com/post/footer/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
@@ -89,6 +89,10 @@
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
+    <loc>http://www.weilong98.com/post/butterfly/</loc>
+    <lastmod>2022-07-14</lastmod>
+  </url>
+  <url>
     <loc>http://www.weilong98.com/post/markdown/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
@@ -97,19 +101,15 @@
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
-    <loc>http://www.weilong98.com/post/butterfly/</loc>
-    <lastmod>2022-07-14</lastmod>
-  </url>
-  <url>
     <loc>http://www.weilong98.com/post/projectpublish/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
-    <loc>http://www.weilong98.com/post/firefox/</loc>
+    <loc>http://www.weilong98.com/post/oldproject/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
-    <loc>http://www.weilong98.com/post/oldproject/</loc>
+    <loc>http://www.weilong98.com/post/firefox/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
@@ -165,11 +165,11 @@
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
-    <loc>http://www.weilong98.com/post/ideainstall/</loc>
+    <loc>http://www.weilong98.com/post/pdfToBase64/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>
-    <loc>http://www.weilong98.com/post/pdfToBase64/</loc>
+    <loc>http://www.weilong98.com/post/ideainstall/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>
   <url>

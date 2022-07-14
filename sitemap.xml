@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.weilong98.com/categories/index.html</loc>
+    <loc>http://www.weilong98.com/post/springbootkeys/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -20,6 +20,15 @@
   </url>
   
   <url>
+    <loc>http://www.weilong98.com/categories/index.html</loc>
+    
+    <lastmod>2022-07-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.weilong98.com/photo/bizhi/index.html</loc>
     
     <lastmod>2022-07-14</lastmod>
@@ -29,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/post/git/</loc>
+    <loc>http://www.weilong98.com/post/CentOSInstall/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -38,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/post/CentOSInstall/</loc>
+    <loc>http://www.weilong98.com/post/git/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -65,16 +74,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/post/springbootkeys/</loc>
-    
-    <lastmod>2022-07-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.weilong98.com/tags/index.html</loc>
+    <loc>http://www.weilong98.com/shuoshuo/index.html</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -92,24 +92,6 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/message/index.html</loc>
-    
-    <lastmod>2022-07-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.weilong98.com/shuoshuo/index.html</loc>
-    
-    <lastmod>2022-07-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://www.weilong98.com/photo/index.html</loc>
     
     <lastmod>2022-07-14</lastmod>
@@ -119,7 +101,16 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/post/PLSQL%20Developer/</loc>
+    <loc>http://www.weilong98.com/message/index.html</loc>
+    
+    <lastmod>2022-07-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weilong98.com/tags/index.html</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -129,6 +120,15 @@
   
   <url>
     <loc>http://www.weilong98.com/post/oracleinstall/</loc>
+    
+    <lastmod>2022-07-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weilong98.com/post/PLSQL%20Developer/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/post/footer/</loc>
+    <loc>http://www.weilong98.com/post/jdbc/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -191,7 +191,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/post/jdbc/</loc>
+    <loc>http://www.weilong98.com/post/footer/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -272,6 +272,15 @@
   </url>
   
   <url>
+    <loc>http://www.weilong98.com/post/butterfly/</loc>
+    
+    <lastmod>2022-07-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://www.weilong98.com/post/markdown/</loc>
     
     <lastmod>2022-07-14</lastmod>
@@ -290,15 +299,6 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/post/butterfly/</loc>
-    
-    <lastmod>2022-07-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://www.weilong98.com/post/projectpublish/</loc>
     
     <lastmod>2022-07-14</lastmod>
@@ -308,7 +308,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/post/firefox/</loc>
+    <loc>http://www.weilong98.com/post/oldproject/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -317,7 +317,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/post/oldproject/</loc>
+    <loc>http://www.weilong98.com/post/firefox/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -443,7 +443,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/post/ideainstall/</loc>
+    <loc>http://www.weilong98.com/post/pdfToBase64/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -452,7 +452,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/post/pdfToBase64/</loc>
+    <loc>http://www.weilong98.com/post/ideainstall/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -477,6 +477,27 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>http://www.weilong98.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weilong98.com/tags/Vmware/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weilong98.com/tags/CentOS/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>http://www.weilong98.com/tags/Excel/</loc>
@@ -514,35 +535,14 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
+    <loc>http://www.weilong98.com/tags/base64/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/Vmware/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.weilong98.com/tags/CentOS/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.weilong98.com/tags/Navicat-Premium-12/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.weilong98.com/tags/Docsify/</loc>
+    <loc>http://www.weilong98.com/tags/pdf/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -556,14 +556,21 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/ORA-28547%E9%94%99%E8%AF%AF/</loc>
+    <loc>http://www.weilong98.com/tags/Docsify/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/PLSQL-Developer/</loc>
+    <loc>http://www.weilong98.com/tags/Navicat-Premium-12/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weilong98.com/tags/ORA-28547%E9%94%99%E8%AF%AF/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -577,14 +584,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/base64/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.weilong98.com/tags/pdf/</loc>
+    <loc>http://www.weilong98.com/tags/PLSQL-Developer/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -626,7 +626,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/tomcat/</loc>
+    <loc>http://www.weilong98.com/tags/Swagger/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -640,7 +640,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/Swagger/</loc>
+    <loc>http://www.weilong98.com/tags/tomcat/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -654,7 +654,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/spring/</loc>
+    <loc>http://www.weilong98.com/tags/Twikoo/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -689,6 +689,20 @@
   </url>
   
   <url>
+    <loc>http://www.weilong98.com/tags/%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weilong98.com/tags/spring/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://www.weilong98.com/tags/%E9%83%A8%E7%BD%B2%E6%8A%A5%E9%94%99/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -696,14 +710,14 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/Twikoo/</loc>
+    <loc>http://www.weilong98.com/tags/%E6%96%87%E7%AB%A0%E8%B7%AF%E5%BE%84/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/%E6%96%87%E7%AB%A0%E8%B7%AF%E5%BE%84/</loc>
+    <loc>http://www.weilong98.com/tags/Butterfly/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -731,7 +745,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/Butterfly/</loc>
+    <loc>http://www.weilong98.com/tags/NodeJS/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -766,20 +780,6 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/%E6%A1%86%E6%9E%B6/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.weilong98.com/tags/NodeJS/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://www.weilong98.com/tags/iconfont/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -808,6 +808,13 @@
   </url>
   
   <url>
+    <loc>http://www.weilong98.com/tags/MD5/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://www.weilong98.com/tags/valine/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -829,27 +836,27 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/tags/Footer/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.weilong98.com/tags/MD5/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://www.weilong98.com/tags/JDBC/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>http://www.weilong98.com/tags/Footer/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>http://www.weilong98.com/categories/%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>http://www.weilong98.com/categories/Hutool/</loc>
@@ -873,7 +880,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/%E8%AE%B0%E5%BD%95/</loc>
+    <loc>http://www.weilong98.com/categories/IDEA/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -881,13 +888,6 @@
   
   <url>
     <loc>http://www.weilong98.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.weilong98.com/categories/IDEA/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -915,7 +915,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://www.weilong98.com/categories/IDEA/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -929,7 +929,14 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>http://www.weilong98.com/categories/Swagger/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weilong98.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -943,14 +950,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/Swagger/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.weilong98.com/categories/IDEA/%E8%AE%B0%E5%BD%95/</loc>
+    <loc>http://www.weilong98.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -964,14 +964,14 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/spring/</loc>
+    <loc>http://www.weilong98.com/categories/Hexo/%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/Hexo/%E4%BF%AE%E6%94%B9%E8%AE%B0%E5%BD%95/</loc>
+    <loc>http://www.weilong98.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -992,21 +992,14 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%AE%89%E8%A3%85%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.weilong98.com/categories/Hexo/%E6%96%87%E7%AB%A0%E8%AF%AD%E6%B3%95/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://www.weilong98.com/categories/SpringBoot/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weilong98.com/categories/spring/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1020,7 +1013,21 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/</loc>
+    <loc>http://www.weilong98.com/categories/Hexo/%E6%96%87%E7%AB%A0%E8%AF%AD%E6%B3%95/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weilong98.com/categories/%E6%A1%86%E6%9E%B6/SpringMVC/</loc>
+    <lastmod>2022-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.weilong98.com/categories/mybatis/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1034,7 +1041,7 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/%E6%A1%86%E6%9E%B6/SpringMVC/</loc>
+    <loc>http://www.weilong98.com/categories/%E6%B5%8F%E8%A7%88%E5%99%A8/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1055,13 +1062,6 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/mybatis/%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2022-07-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://www.weilong98.com/categories/uTools/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -1069,14 +1069,14 @@
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://www.weilong98.com/categories/%E5%8A%A0%E5%AF%86/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://www.weilong98.com/categories/%E5%8A%A0%E5%AF%86/</loc>
+    <loc>http://www.weilong98.com/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2022-07-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
