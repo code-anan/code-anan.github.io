@@ -1,6 +1,6 @@
 title: SpringBoot学习
 author: lwl
-date: 2022-06-17 14:33:18
+date: 2022-01-23 14:33:18
 tags:
   - SpringBoot
   - 框架
@@ -43,8 +43,8 @@ my: post/springbootkeys
 @EnableAutoConfiguration：自动配置
     @AutoConfigurationPackage：自动装配的包
     @Import({AutoConfigurationImportSelector.class})：自动配置选择导入
-根据这些注解查看源码可以看到资源是如何加载到配置类种，具体可以看[狂神的视频](https://www.bilibili.com/video/BV1PE411i7CV?p=6&spm_id_from=pageDriver)
 ```
+根据这些注解查看源码可以看到资源是如何加载到配置类种，具体可以看[狂神的视频](https://www.bilibili.com/video/BV1PE411i7CV?p=6&spm_id_from=pageDriver)
 
 > 结论：springboot所有自动配置都是在启动的时候扫描并加载`spring.factories`,所有的自动配置类都在里面，但是不一定生效，要判断条件是否成立，只要导入了对应的start，就有对应的启动器，有了启动器装配就会生效，然后就会配置成功
 
@@ -533,7 +533,7 @@ public class DruidConfig {
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.username=root
 spring.datasource.password=233
-spring.datasource.url=jdbc:mysql://localhost:3306/test?serverTimeZone=UTClhost:3306
+spring.datasource.url=jdbc:mysql://localhost:3306/test?serverTimeZone=UTC
 ```
 
 声明接口
