@@ -213,7 +213,7 @@ modelAndView.setViewName("show");
 第一种效果是如下图
 
 ```java
-@RequestMapping("/get/{name}/{age}")
+    @RequestMapping("/get/{name}/{age}")
     public String getName(@PathVariable String name, @PathVariable Integer age, Model model){
         model.addAttribute("mg",name+"的年龄为"+age);
         return "showNameAge";
@@ -222,12 +222,13 @@ modelAndView.setViewName("show");
 
 ![](https://gcore.jsdelivr.net/gh/code-anan/image/20220109120839.png)
 
-如果使用以前的方式那么url的写法是http://localhost:8088/get/?name=zhangsan&&age=18,这种风格看起来更简洁有层次，同时也更加安全
+如果使用以前的方式那么url的写法是http://localhost:8088/get/?name=zhangsan&&age=18
+这种风格看起来更简洁有层次，同时也更加安全
 
 第二种是根据不同的请求方式，即便路由地址一样但是可以执行不同的操作
 
 ```java
-@RequestMapping(value = "/operate",method = RequestMethod.GET)
+    @RequestMapping(value = "/operate",method = RequestMethod.GET)
     public String useGetMethod(Model model){
         model.addAttribute("msg","发起了get请求");
         return "operate";
@@ -272,8 +273,8 @@ modelAndView.setViewName("redirect:/operate.jsp");
 处理方法：
 
 ```java
-@RequestMapping("/hello")
-    public String hrllo(String name,Model model){
+    @RequestMapping("/hello")
+    public String hello(String name,Model model){
         model.addAttribute("msg",name);
         return "operate";
     }
@@ -286,8 +287,8 @@ modelAndView.setViewName("redirect:/operate.jsp");
 处理方法：
 
 ```java
-@RequestMapping("/hello")
-    public String hrllo(@RequestParam("username") String name, Model model){
+    @RequestMapping("/hello")
+    public String hello(@RequestParam("username") String name, Model model){
         model.addAttribute("msg",name);
         return "operate";
     }
@@ -315,7 +316,7 @@ public class User {
 处理方法：
 
 ```java
-@RequestMapping("/user")
+    @RequestMapping("/user")
     public String hello(User user){
         System.out.println(user);
         return "operate";
@@ -364,7 +365,7 @@ public class User {
 
 ## 处理器方法的返回值
 
-* ModelAndView：有数据和视图，对试图执行forward操作
+* ModelAndView：有数据和视图，对视图执行forward操作
 * Stirng：一般表示视图名称，有@RestController表示一个字符串
 * void ：不能表示数据也不能表示视图，在处理ajax的时候可以使用void返回值，通过HttpServletResponse输出数据
 * Object：String、Integer、Map、List、User等都是对象，一般把他们作为数据用来相应ajax的请求
@@ -384,7 +385,7 @@ public class User {
 ### 代码使用
 
 ```java
- @RequestMapping(value = "/user",produces = "application/json;charset=utf-8")
+    @RequestMapping(value = "/user",produces = "application/json;charset=utf-8")
     @ResponseBody
     public String hello() throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
@@ -442,7 +443,7 @@ produces属性是为了防止json串中乱码， @ResponseBody一般和@controll
 把上面的代码稍作修改
 
 ```java
- @RequestMapping(value = "/user",produces = "application/json;charset=utf-8")
+    @RequestMapping(value = "/user",produces = "application/json;charset=utf-8")
     @ResponseBody
     public String hello(){
         User user = new User();
@@ -467,7 +468,7 @@ produces属性是为了防止json串中乱码， @ResponseBody一般和@controll
 如果我们controller的返回值类型想转换成是json、xml等数据类型，必须要加上此驱动，它能够完成java对象到json、xml等数据格式的转换
 
 ```java
-  @RequestMapping(value = "/user",produces = "application/json;charset=utf-8")
+    @RequestMapping(value = "/user",produces = "application/json;charset=utf-8")
     @ResponseBody
     public User hello(){
         User user = new User();
@@ -528,7 +529,7 @@ service、dao对象定义在spring的配置文件中，让spring管理这些对�
 ### 添加依赖
 
 ```xml
-<dependency>
+    <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
       <version>5.2.5.RELEASE</version>
@@ -583,7 +584,7 @@ service、dao对象定义在spring的配置文件中，让spring管理这些对�
 主要添加三个框架依赖、druid连接池，fastjson、mysql驱动还有jsp servlet依赖,spring整合mybatis依赖、jdbc依赖等，然后还有pom.xml文件中build标签下需要添加以下代码
 
 ```xml
-<resources>
+       <resources>
         <resource>
           <directory>src/main/java</directory>
           <includes>

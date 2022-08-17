@@ -103,7 +103,7 @@ PS：用这个模板需要手动添加resources资源目录(￣▽￣)~*
 </mapper>
 ```
 
-其中mapper标签是当前文件的跟标签，必须存在，而`namespace`为dao接口的`全限定名称`，其实就是用它和接口对应起来，然后`mapper`标签内可以有`<select>`、`<update>`、`<insert>`、`<delete>`四种标签表示执行增删改查的操作
+其中mapper标签是当前文件的根标签，必须存在，而`namespace`为dao接口的`全限定名称`，其实就是用它和接口对应起来，然后`mapper`标签内可以有`<select>`、`<update>`、`<insert>`、`<delete>`四种标签表示执行增删改查的操作
 这里以select为例,id表示这个select语句的唯一标识，与接口中的方法名保持一致，resultType表示返回结果的每一项的类型
 
 ### 创建mybatis主配置文件
