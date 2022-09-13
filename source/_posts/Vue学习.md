@@ -181,7 +181,7 @@ var vue=new Vue({
 
 ### Attribute
 
-```
+```javascript
 <!DOCTYPE html>
 <html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
@@ -217,7 +217,7 @@ var vue=new Vue({
 
 ### javascript表达式
 
-```js
+```javascript
 <div>{{ number + 1 }}</div>
         <div>{{ ok ? 'YES' : 'NO' }}</div>
         <div>{{ message.split(' ').reverse().join(',') }}</div>
